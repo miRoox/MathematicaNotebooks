@@ -1,0 +1,886 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      TextData[
+       ButtonBox[
+        "\:4f7f\:7528Mathematica\:5b9e\:73b0\:57fa\:4e8e\:7c7b\:7684\:9762\:5411\:5bf9\:8c61",
+        BaseStyle -> "Hyperlink",
+        ButtonData -> {
+         URL[
+          "https://miroox.github.io/2017/09/ClassBasedOOPWithMma/"
+         ],
+         None
+        },
+        ButtonNote -> "https://miroox.github.io/2017/09/ClassBasedOOPWithMma/"
+       ]
+      ],
+      "Title"
+     ],
+     Cell[
+      BoxData[RowBox[{"Remove", "[", "\"`*\"", "]"}]],
+      "Input"
+     ],
+     Cell[
+      BoxData[
+       RowBox[
+        {
+         RowBox[{"(*", "nil", "*)"}],
+         "\[IndentingNewLine]",
+         RowBox[
+          {
+           RowBox[
+            {
+             RowBox[
+              {
+               "SetAttributes",
+               "[",
+               RowBox[{"nil", ",", "ReadProtected"}],
+               "]"
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[{RowBox[{"nil", "[", "___", "]"}], "=", "nil"}],
+             ";"
+            }
+           ],
+           RowBox[{"(*", "default", "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[{"(*", "new", "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               "SetAttributes",
+               "[",
+               RowBox[
+                {
+                 "new",
+                 ",",
+                 RowBox[
+                  {"{", RowBox[{"ReadProtected", ",", "HoldFirst"}], "}"}
+                 ]
+                }
+               ],
+               "]"
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[{RowBox[{"new", "[", "nil", "]"}], "=", "nil"}],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"(*", RowBox[{"type", " ", "of"}], "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               "SetAttributes",
+               "[",
+               RowBox[{"typeOf", ",", "ReadProtected"}],
+               "]"
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               RowBox[{"typeOf", "[", "obj_", "]"}],
+               ":=",
+               RowBox[
+                {
+                 "If",
+                 "[",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[
+                      {"Evaluate", "[", RowBox[{"obj", "@", "type"}], "]"}
+                     ],
+                     "===",
+                     "nil"
+                    }
+                   ],
+                   ",",
+                   "nil",
+                   ",",
+                   RowBox[{"obj", "@", "type"}],
+                   ",",
+                   RowBox[{"Head", "[", "obj", "]"}]
+                  }
+                 ],
+                 "]"
+                }
+               ]
+              }
+             ],
+             ";"
+            }
+           ],
+           RowBox[
+            {
+             "(*",
+             RowBox[
+              {
+               "to",
+               " ",
+               "make",
+               " ",
+               "sure",
+               " ",
+               "every",
+               " ",
+               "expression",
+               " ",
+               "has",
+               " ",
+               "a",
+               " ",
+               "type"
+              }
+             ],
+             "*)"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"(*", "classQ", "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               "SetAttributes",
+               "[",
+               RowBox[{"classQ", ",", "ReadProtected"}],
+               "]"
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               RowBox[{"classQ", "[", "obj_", "]"}],
+               ":=",
+               RowBox[
+                {
+                 RowBox[
+                  {RowBox[{"typeOf", "[", "obj", "]"}], "\[Equal]", "class"}
+                 ],
+                 "||",
+                 RowBox[
+                  {RowBox[{"typeOf", "[", "obj", "]"}], "\[Equal]", "nil"}
+                 ]
+                }
+               ]
+              }
+             ],
+             ";"
+            }
+           ],
+           RowBox[
+            {
+             "(*",
+             RowBox[
+              {"nil", " ", "is", " ", "a", " ", "special", " ", "class"}
+             ],
+             "*)"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"(*", "class", "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               "SetAttributes",
+               "[",
+               RowBox[
+                {
+                 "class",
+                 ",",
+                 RowBox[
+                  {"{", RowBox[{"ReadProtected", ",", "HoldAll"}], "}"}
+                 ]
+                }
+               ],
+               "]"
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               RowBox[
+                {
+                 "class",
+                 "[",
+                 RowBox[
+                  {
+                   "identifier_Symbol",
+                   ",",
+                   RowBox[{"{", "privDecls___Symbol", "}"}],
+                   ",",
+                   "body_"
+                  }
+                 ],
+                 "]"
+                }
+               ],
+               ":=",
+               RowBox[
+                {
+                 "class",
+                 "[",
+                 RowBox[
+                  {
+                   "identifier",
+                   ",",
+                   "nil",
+                   ",",
+                   RowBox[{"{", "privDecls", "}"}],
+                   ",",
+                   "body"
+                  }
+                 ],
+                 "]"
+                }
+               ]
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {
+               "class",
+               "[",
+               RowBox[
+                {
+                 "identifier_Symbol",
+                 ",",
+                 RowBox[{"baseClass_", "?", "classQ"}],
+                 ",",
+                 RowBox[{"{", "privDecls___Symbol", "}"}],
+                 ",",
+                 "body_"
+                }
+               ],
+               "]"
+              }
+             ],
+             ":=",
+             RowBox[
+              {
+               "With",
+               "[",
+               "\[IndentingNewLine]",
+               RowBox[
+                {
+                 RowBox[
+                  {
+                   "{",
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       "className",
+                       "=",
+                       RowBox[{"SymbolName", "[", "identifier", "]"}]
+                      }
+                     ],
+                     ",",
+                     "\[IndentingNewLine]",
+                     RowBox[
+                      {
+                       "upperClassName",
+                       "=",
+                       RowBox[
+                        {
+                         "StringReplace",
+                         "[",
+                         RowBox[
+                          {
+                           RowBox[{"SymbolName", "[", "identifier", "]"}],
+                           ",",
+                           RowBox[
+                            {
+                             RowBox[{"StartOfString", "~~", "h_"}],
+                             "\[RuleDelayed]",
+                             RowBox[{"ToUpperCase", "[", "h", "]"}]
+                            }
+                           ]
+                          }
+                         ],
+                         "]"
+                        }
+                       ]
+                      }
+                     ]
+                    }
+                   ],
+                   "}"
+                  }
+                 ],
+                 ",",
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     "SetAttributes",
+                     "[",
+                     RowBox[
+                      {
+                       "identifier",
+                       ",",
+                       RowBox[
+                        {"{", RowBox[{"ReadProtected", ",", "HoldAll"}], "}"}
+                       ]
+                      }
+                     ],
+                     "]"
+                    }
+                   ],
+                   ";",
+                   "\[IndentingNewLine]",
+                   RowBox[{RowBox[{"identifier", "@", "type"}], "=", "class"}],
+                   ";",
+                   "\[IndentingNewLine]",
+                   RowBox[
+                    {"(*", RowBox[{"'", RowBox[{"type", "'"}], "Q"}], "*)"}
+                   ],
+                   "\[IndentingNewLine]",
+                   RowBox[
+                    {
+                     "SetAttributes",
+                     "[",
+                     RowBox[
+                      {
+                       RowBox[
+                        {
+                         "Evaluate",
+                         "[",
+                         RowBox[
+                          {"Symbol", "[", RowBox[{"className", "<>", "\"Q\""}], "]"}
+                         ],
+                         "]"
+                        }
+                       ],
+                       ",",
+                       "ReadProtected"
+                      }
+                     ],
+                     "]"
+                    }
+                   ],
+                   ";",
+                   "\[IndentingNewLine]",
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       RowBox[
+                        {
+                         "Evaluate",
+                         "[",
+                         RowBox[
+                          {"Symbol", "[", RowBox[{"className", "<>", "\"Q\""}], "]"}
+                         ],
+                         "]"
+                        }
+                       ],
+                       "[",
+                       "obj_",
+                       "]"
+                      }
+                     ],
+                     ":=",
+                     RowBox[
+                      {
+                       "If",
+                       "[",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {
+                         RowBox[
+                          {
+                           "obj",
+                           "[",
+                           RowBox[
+                            {
+                             "Evaluate",
+                             "[",
+                             RowBox[
+                              {
+                               "Symbol",
+                               "[",
+                               RowBox[{"\"is\"", "<>", "upperClassName"}],
+                               "]"
+                              }
+                             ],
+                             "]"
+                            }
+                           ],
+                           "]"
+                          }
+                         ],
+                         ",",
+                         "\[IndentingNewLine]",
+                         "True",
+                         ",",
+                         "False",
+                         ",",
+                         "False"
+                        }
+                       ],
+                       "]"
+                      }
+                     ]
+                    }
+                   ],
+                   ";",
+                   "\[IndentingNewLine]",
+                   RowBox[{"(*", "constructor", "*)"}],
+                   "\[IndentingNewLine]",
+                   RowBox[
+                    {
+                     RowBox[{"new", "[", "identifier", "]"}],
+                     ":=",
+                     RowBox[
+                      {
+                       "Module",
+                       "[",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {
+                         RowBox[
+                          {
+                           "{",
+                           RowBox[{"$self", ",", "$base", ",", "privDecls"}],
+                           "}"
+                          }
+                         ],
+                         ",",
+                         "\[IndentingNewLine]",
+                         RowBox[
+                          {
+                           RowBox[
+                            {
+                             "SetAttributes",
+                             "[",
+                             RowBox[{"$self", ",", "HoldAll"}],
+                             "]"
+                            }
+                           ],
+                           ";",
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {
+                             "SetAttributes",
+                             "[",
+                             RowBox[{"$base", ",", "ReadProtected"}],
+                             "]"
+                            }
+                           ],
+                           ";",
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {
+                             RowBox[
+                              {
+                               RowBox[
+                                {
+                                 "SetAttributes",
+                                 "[",
+                                 RowBox[{"#", ",", "ReadProtected"}],
+                                 "]"
+                                }
+                               ],
+                               "&"
+                              }
+                             ],
+                             "/@",
+                             RowBox[{"{", "privDecls", "}"}]
+                            }
+                           ],
+                           ";",
+                           RowBox[{"(*", "encapsulation", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {"$base", "=", RowBox[{"new", "[", "baseClass", "]"}]}
+                           ],
+                           ";",
+                           RowBox[{"(*", "inheritance", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {
+                             RowBox[{"$self", "[", "mem_", "]"}],
+                             ":=",
+                             RowBox[{"$base", "@", "mem"}]
+                            }
+                           ],
+                           ";",
+                           RowBox[{"(*", "polymorphism", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[{RowBox[{"$self", "@", "type"}], "=", "identifier"}],
+                           ";",
+                           RowBox[{"(*", "type", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {
+                             RowBox[
+                              {
+                               "$self",
+                               "[",
+                               RowBox[
+                                {
+                                 "Evaluate",
+                                 "[",
+                                 RowBox[
+                                  {
+                                   "Symbol",
+                                   "[",
+                                   RowBox[{"\"is\"", "<>", "upperClassName"}],
+                                   "]"
+                                  }
+                                 ],
+                                 "]"
+                                }
+                               ],
+                               "]"
+                              }
+                             ],
+                             "=",
+                             "True"
+                            }
+                           ],
+                           ";",
+                           RowBox[{"(*", "subtyping", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[{"(*", "body", "*)"}],
+                           "\[IndentingNewLine]",
+                           RowBox[
+                            {
+                             "ReleaseHold",
+                             "[",
+                             RowBox[
+                              {
+                               RowBox[{"Hold", "[", "body", "]"}],
+                               "/.",
+                               RowBox[
+                                {
+                                 "{",
+                                 RowBox[
+                                  {
+                                   RowBox[{"self", "\[Rule]", "$self"}],
+                                   ",",
+                                   RowBox[{"base", "\[Rule]", "$base"}],
+                                   ",",
+                                   RowBox[{"public", "\[Rule]", "$self"}]
+                                  }
+                                 ],
+                                 "}"
+                                }
+                               ]
+                              }
+                             ],
+                             "]"
+                            }
+                           ],
+                           ";",
+                           "\[IndentingNewLine]",
+                           "$self"
+                          }
+                         ]
+                        }
+                       ],
+                       RowBox[
+                        {"(*", RowBox[{"reference", " ", "semantics"}], "*)"}
+                       ],
+                       "\[IndentingNewLine]",
+                       "]"
+                      }
+                     ]
+                    }
+                   ],
+                   ";"
+                  }
+                 ]
+                }
+               ],
+               "\[IndentingNewLine]",
+               "]"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      ],
+      "Input"
+     ],
+     Cell[
+      BoxData[
+       RowBox[
+        {
+         "class",
+         "[",
+         RowBox[
+          {
+           "testBase",
+           ",",
+           "\[IndentingNewLine]",
+           RowBox[{"{", "text", "}"}],
+           ",",
+           "\[IndentingNewLine]",
+           RowBox[{"(*", "initialize", "*)"}],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[{"text", "=", "\"Base\""}],
+             ";",
+             "\[IndentingNewLine]",
+             RowBox[{"(*", RowBox[{"public", " ", "method"}], "*)"}],
+             "\[IndentingNewLine]",
+             RowBox[
+              {
+               RowBox[
+                {
+                 "public",
+                 "@",
+                 RowBox[{"setText", "[", "str_String", "]"}]
+                }
+               ],
+               ":=",
+               RowBox[{"(", RowBox[{"text", "=", "str"}], ")"}]
+              }
+             ],
+             ";",
+             "\[IndentingNewLine]",
+             RowBox[
+              {
+               RowBox[{"public", "@", RowBox[{"getText", "[", "]"}]}],
+               ":=",
+               "text"
+              }
+             ],
+             ";",
+             "\[IndentingNewLine]",
+             RowBox[
+              {
+               RowBox[{"public", "@", RowBox[{"print", "[", "]"}]}],
+               ":=",
+               RowBox[
+                {
+                 "Print",
+                 "[",
+                 RowBox[{"\"This is base.The text is \"", "<>", "text"}],
+                 "]"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "\[IndentingNewLine]",
+         "]"
+        }
+       ]
+      ],
+      "Input"
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          {
+           RowBox[
+            {
+             RowBox[
+              {"obj1", "=", RowBox[{"new", "[", "testBase", "]"}]}
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"obj1", "@", RowBox[{"print", "[", "]"}]}]
+          }
+         ],
+         "Input"
+        ],
+        Cell[BoxData["\"This is base.The text is Base\""], "Print"]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      BoxData[
+       RowBox[
+        {
+         "class",
+         "[",
+         RowBox[
+          {
+           "testDerived",
+           ",",
+           "testBase",
+           ",",
+           "\[IndentingNewLine]",
+           RowBox[{"{", "}"}],
+           ",",
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[{"public", "@", RowBox[{"print", "[", "]"}]}],
+             ":=",
+             RowBox[
+              {
+               "Print",
+               "[",
+               RowBox[
+                {
+                 "\"This is derived.The text is \"",
+                 "<>",
+                 RowBox[{"self", "@", RowBox[{"getText", "[", "]"}]}]
+                }
+               ],
+               "]"
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "\[IndentingNewLine]",
+         "]"
+        }
+       ]
+      ],
+      "Input"
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          {
+           RowBox[
+            {
+             RowBox[
+              {"obj2", "=", RowBox[{"new", "[", "testDerived", "]"}]}
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[
+            {
+             RowBox[
+              {"obj2", "@", RowBox[{"setText", "[", "\"Derived\"", "]"}]}
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"obj2", "@", RowBox[{"print", "[", "]"}]}]
+          }
+         ],
+         "Input"
+        ],
+        Cell[
+         BoxData["\"This is derived.The text is Derived\""],
+         "Print"
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          {
+           RowBox[
+            {
+             RowBox[
+              {
+               RowBox[
+                {"testFun", "[", RowBox[{"obj_", "?", "testBaseQ"}], "]"}
+               ],
+               ":=",
+               RowBox[{"obj", "@", RowBox[{"print", "[", "]"}]}]
+              }
+             ],
+             ";"
+            }
+           ],
+           "\[IndentingNewLine]",
+           RowBox[{"testFun", "[", "obj1", "]"}],
+           "\[IndentingNewLine]",
+           RowBox[{"testFun", "[", "obj2", "]"}]
+          }
+         ],
+         "Input"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[BoxData["\"This is base.The text is Base\""], "Print"],
+           Cell[
+            BoxData["\"This is derived.The text is Derived\""],
+            "Print"
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ ShowSelection -> True,
+ StyleDefinitions -> "Default.nb"
+]

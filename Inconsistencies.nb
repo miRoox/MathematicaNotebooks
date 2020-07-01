@@ -1,0 +1,966 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Inconsistencies between Front End & Text-Based Kernel",
+      "Title"
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Unquoted string", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell["after ?", "Subsection"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[RowBox[{"?", "Sin|Cos"}]],
+               "Input",
+               CellLabel -> "In[16]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Missing",
+                  "[",
+                  RowBox[{"\"UnknownSymbol\"", ",", "\"Sin|Cos\""}],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[16]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[RowBox[{"ToExpression", "[", "\"?Sin|Cos\"", "]"}]],
+               "Input",
+               CellLabel -> "In[17]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  InterpretationBox[
+                   StyleBox[
+                    FrameBox[
+                     DynamicModuleBox[
+                      {
+                       System`InformationDump`open$$ = False,
+                       System`InformationDump`mouseOver$$ = False
+                      },
+                      PaneSelectorBox[
+                       {
+                        True -> TagBox[
+                         GridBox[
+                          {
+                           {
+                            ItemBox[
+                             PaneBox[
+                              StyleBox[
+                               "\" Symbol\"",
+                               "InformationTitleText",
+                               StripOnInput -> False,
+                               BaseStyle -> None
+                              ],
+                              FrameMargins -> {{4, 0}, {-1, 1}}
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ],
+                            ItemBox[
+                             PaneBox[
+                              TooltipBox[
+                               ButtonBox[
+                                PaneSelectorBox[
+                                 {
+                                  False -> DynamicBox[
+                                   FEPrivate`FrontEndResource[
+                                    "FEBitmaps",
+                                    "InformationHelpIcon"
+                                   ]
+                                  ],
+                                  True -> DynamicBox[
+                                   FEPrivate`FrontEndResource[
+                                    "FEBitmaps",
+                                    "InformationHelpIconHot"
+                                   ]
+                                  ]
+                                 },
+                                 Dynamic[CurrentValue["MouseOver"]]
+                                ],
+                                Appearance -> None,
+                                BaseStyle -> "Link",
+                                ButtonData -> "paclet:ref/Sin",
+                                ButtonNote -> "paclet:ref/Sin"
+                               ],
+                               "\"paclet:ref/Sin\""
+                              ],
+                              FrameMargins -> {{0, 4}, {0, 2}}
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ]
+                           },
+                           {
+                            ItemBox[
+                             PaneBox[
+                              StyleBox[
+                               "\"\\!\\(\\*RowBox[{\\\"Sin\\\", \\\"[\\\", StyleBox[\\\"z\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives the sine of \\!\\(\\*StyleBox[\\\"z\\\", \\\"TI\\\"]\\). \"",
+                               "InformationUsageText",
+                               StripOnInput -> False,
+                               LineSpacing -> {1.5, 1.5, 3.}
+                              ],
+                              FrameMargins -> {{10, 10}, {8, 10}}
+                             ],
+                             BaseStyle -> "InformationUsageSubtitleBackground",
+                             StripOnInput -> False
+                            ],
+                            ItemBox[
+                             "\"\"",
+                             BaseStyle -> "InformationUsageSubtitleBackground",
+                             StripOnInput -> False
+                            ]
+                           },
+                           {
+                            PaneBox[
+                             GridBox[
+                              {
+                               {
+                                DynamicModuleBox[
+                                 {
+                                  System`InformationDump`open$$ = {
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False,
+                                   False
+                                  }
+                                 },
+                                 StyleBox[
+                                  GridBox[
+                                   {
+                                    {
+                                     TagBox[
+                                      TooltipBox[
+                                       StyleBox[
+                                        "\" Documentation\"",
+                                        "InformationRowLabel",
+                                        StripOnInput -> False
+                                       ],
+                                       "\"Documentation\"",
+                                       TooltipStyle -> "TextStyling"
+                                      ],
+                                      Annotation[#1, "Documentation", "Tooltip"] & 
+                                     ],
+                                     TemplateBox[
+                                      {
+                                       TemplateBox[
+                                        {
+                                         "\"Local \[RightGuillemet]\"",
+                                         "paclet:ref/Sin",
+                                         "paclet:ref/Sin",
+                                         "Link",
+                                         {RGBColor[0.9686274509803922, 0.4666666666666667, 0.]},
+                                         BaseStyle -> {RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}
+                                        },
+                                        "HyperlinkTemplate"
+                                       ],
+                                       "\"  \"",
+                                       StyleBox[
+                                        "\"|\"",
+                                        "InformationRowLabel",
+                                        StripOnInput -> False
+                                       ],
+                                       "\"  \"",
+                                       TemplateBox[
+                                        {
+                                         "\"Web \[RightGuillemet]\"",
+                                         {
+                                          URL["http://reference.wolfram.com/language/ref/Sin.html"],
+                                          None
+                                         },
+                                         "http://reference.wolfram.com/language/ref/Sin.html",
+                                         "Hyperlink",
+                                         {RGBColor[0.9686274509803922, 0.4666666666666667, 0.]},
+                                         BaseStyle -> {RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}
+                                        },
+                                        "HyperlinkTemplate"
+                                       ]
+                                      },
+                                      "RowDefault"
+                                     ]
+                                    },
+                                    {
+                                     TagBox[
+                                      TooltipBox[
+                                       StyleBox[
+                                        "\" Attributes\"",
+                                        "InformationRowLabel",
+                                        StripOnInput -> False
+                                       ],
+                                       "\"Attributes\"",
+                                       TooltipStyle -> "TextStyling"
+                                      ],
+                                      Annotation[#1, "Attributes", "Tooltip"] & 
+                                     ],
+                                     RowBox[
+                                      {
+                                       "{",
+                                       RowBox[
+                                        {"Listable", ",", "NumericFunction", ",", "Protected"}
+                                       ],
+                                       "}"
+                                      }
+                                     ]
+                                    },
+                                    {
+                                     TagBox[
+                                      TooltipBox[
+                                       StyleBox[
+                                        "\" Full Name\"",
+                                        "InformationRowLabel",
+                                        StripOnInput -> False
+                                       ],
+                                       "\"FullName\"",
+                                       TooltipStyle -> "TextStyling"
+                                      ],
+                                      Annotation[#1, "FullName", "Tooltip"] & 
+                                     ],
+                                     "\"System`Sin\""
+                                    }
+                                   },
+                                   AutoDelete -> False,
+                                   GridBoxAlignment -> {"Columns" -> {Right, Left}},
+                                   GridBoxDividers -> None,
+                                   GridBoxItemSize -> {"Columns" -> {Automatic, Automatic}},
+                                   GridBoxSpacings -> {
+                                    "Columns" -> {
+                                     Offset[0.27999999999999997],
+                                     {Offset[0.5599999999999999]},
+                                     Offset[0.27999999999999997]
+                                    },
+                                    "Rows" -> {Offset[0.2], {Offset[0.8]}, Offset[0.2]}
+                                   }
+                                  ],
+                                  "DialogStyle",
+                                  StripOnInput -> False
+                                 ],
+                                 DynamicModuleValues :> { }
+                                ]
+                               }
+                              },
+                              DefaultBaseStyle -> "Column",
+                              GridBoxAlignment -> {"Columns" -> {{Left}}},
+                              GridBoxDividers -> {"Columns" -> {{False}}, "Rows" -> {{False}}},
+                              GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                              GridBoxSpacings -> {
+                               "Columns" -> {
+                                Offset[0.27999999999999997],
+                                {Offset[0.5599999999999999]},
+                                Offset[0.27999999999999997]
+                               },
+                               "Rows" -> {Offset[0.2], {Offset[3.6]}, Offset[0.2]}
+                              }
+                             ],
+                             FrameMargins -> 6
+                            ],
+                            ""
+                           },
+                           {
+                            ItemBox[
+                             TagBox[
+                              ButtonBox[
+                               PaneSelectorBox[
+                                {
+                                 False -> DynamicBox[
+                                  FEPrivate`FrontEndResource["FEBitmaps", "UpPointerOpener"]
+                                 ],
+                                 True -> DynamicBox[
+                                  FEPrivate`FrontEndResource[
+                                   "FEBitmaps",
+                                   "UpPointerOpenerHot"
+                                  ]
+                                 ]
+                                },
+                                Dynamic[System`InformationDump`mouseOver$$]
+                               ],
+                               Alignment -> Left,
+                               Appearance -> {"Default" -> None},
+                               ButtonFunction :> FEPrivate`Set[System`InformationDump`open$$, False],
+                               Evaluator -> Automatic,
+                               FrameMargins -> {{9, 0}, {0, 0}},
+                               ImageMargins -> 0,
+                               ImageSize -> Full,
+                               Method -> "Preemptive"
+                              ],
+                              EventHandlerTag[
+                               {
+                                "MouseEntered" :> FEPrivate`Set[System`InformationDump`mouseOver$$, True],
+                                "MouseExited" :> FEPrivate`Set[System`InformationDump`mouseOver$$, False],
+                                Method -> "Preemptive",
+                                PassEventsDown -> Automatic,
+                                PassEventsUp -> True
+                               }
+                              ]
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ],
+                            "\[SpanFromLeft]"
+                           }
+                          },
+                          AutoDelete -> False,
+                          FrameStyle -> Directive[GrayLevel[0.8], Thickness[Tiny]],
+                          GridBoxAlignment -> {"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+                          GridBoxDividers -> {"Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+                          GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}
+                         ],
+                         "Grid"
+                        ],
+                        False -> TagBox[
+                         GridBox[
+                          {
+                           {
+                            ItemBox[
+                             PaneBox[
+                              StyleBox[
+                               "\" Symbol\"",
+                               "InformationTitleText",
+                               StripOnInput -> False
+                              ],
+                              FrameMargins -> {{4, 0}, {-1, 1}}
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ],
+                            ItemBox[
+                             PaneBox[
+                              TooltipBox[
+                               ButtonBox[
+                                PaneSelectorBox[
+                                 {
+                                  False -> DynamicBox[
+                                   FEPrivate`FrontEndResource[
+                                    "FEBitmaps",
+                                    "InformationHelpIcon"
+                                   ],
+                                   ImageSizeCache -> {13., {4., 9.}}
+                                  ],
+                                  True -> DynamicBox[
+                                   FEPrivate`FrontEndResource[
+                                    "FEBitmaps",
+                                    "InformationHelpIconHot"
+                                   ],
+                                   ImageSizeCache -> {13., {4., 9.}}
+                                  ]
+                                 },
+                                 Dynamic[CurrentValue["MouseOver"]]
+                                ],
+                                Appearance -> None,
+                                BaseStyle -> "Link",
+                                ButtonData -> "paclet:ref/Sin",
+                                ButtonNote -> "paclet:ref/Sin"
+                               ],
+                               "\"paclet:ref/Sin\""
+                              ],
+                              FrameMargins -> {{0, 4}, {0, 2}}
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ]
+                           },
+                           {
+                            ItemBox[
+                             PaneBox[
+                              StyleBox[
+                               "\"\\!\\(\\*RowBox[{\\\"Sin\\\", \\\"[\\\", StyleBox[\\\"z\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives the sine of \\!\\(\\*StyleBox[\\\"z\\\", \\\"TI\\\"]\\). \"",
+                               "InformationUsageText",
+                               StripOnInput -> False,
+                               LineSpacing -> {1.5, 1.5, 3.}
+                              ],
+                              FrameMargins -> {{10, 10}, {8, 10}}
+                             ],
+                             BaseStyle -> "InformationUsageSubtitleBackground",
+                             StripOnInput -> False
+                            ],
+                            ItemBox[
+                             "\"\"",
+                             BaseStyle -> "InformationUsageSubtitleBackground",
+                             StripOnInput -> False
+                            ]
+                           },
+                           {
+                            ItemBox[
+                             TagBox[
+                              ButtonBox[
+                               PaneSelectorBox[
+                                {
+                                 False -> DynamicBox[
+                                  FEPrivate`FrontEndResource[
+                                   "FEBitmaps",
+                                   "DownPointerOpener"
+                                  ],
+                                  ImageSizeCache -> {10., {3., 7.}}
+                                 ],
+                                 True -> DynamicBox[
+                                  FEPrivate`FrontEndResource[
+                                   "FEBitmaps",
+                                   "DownPointerOpenerHot"
+                                  ],
+                                  ImageSizeCache -> {10., {3., 7.}}
+                                 ]
+                                },
+                                Dynamic[System`InformationDump`mouseOver$$]
+                               ],
+                               Alignment -> Left,
+                               Appearance -> {"Default" -> None},
+                               ButtonFunction :> FEPrivate`Set[System`InformationDump`open$$, True],
+                               Evaluator -> Automatic,
+                               FrameMargins -> {{9, 0}, {0, 0}},
+                               ImageMargins -> 0,
+                               ImageSize -> Full,
+                               Method -> "Preemptive"
+                              ],
+                              EventHandlerTag[
+                               {
+                                "MouseEntered" :> FEPrivate`Set[System`InformationDump`mouseOver$$, True],
+                                "MouseExited" :> FEPrivate`Set[System`InformationDump`mouseOver$$, False],
+                                Method -> "Preemptive",
+                                PassEventsDown -> Automatic,
+                                PassEventsUp -> True
+                               }
+                              ]
+                             ],
+                             BaseStyle -> "InformationTitleBackground",
+                             StripOnInput -> False
+                            ],
+                            "\[SpanFromLeft]"
+                           }
+                          },
+                          AutoDelete -> False,
+                          FrameStyle -> Directive[GrayLevel[0.8], Thickness[Tiny]],
+                          GridBoxAlignment -> {"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+                          GridBoxDividers -> {"Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+                          GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}
+                         ],
+                         "Grid"
+                        ]
+                       },
+                       Dynamic[System`InformationDump`open$$],
+                       BaselinePosition -> Baseline,
+                       FrameMargins -> 0,
+                       ImageSize -> Automatic
+                      ],
+                      DynamicModuleValues :> { }
+                     ],
+                     BaseStyle -> "InformationGridFrame",
+                     StripOnInput -> False
+                    ],
+                    "InformationGridPlain",
+                    StripOnInput -> False
+                   ],
+                   InformationData[
+                    Association[
+                     "ObjectType" -> "Symbol",
+                     "Usage" -> "\!\(\*RowBox[{\"Sin\", \"[\", StyleBox[\"z\", \"TI\"], \"]\"}]\) gives the sine of \!\(\*StyleBox[\"z\", \"TI\"]\). ",
+                     "Documentation" -> Association[
+                      "Local" -> "paclet:ref/Sin",
+                      "Web" -> "http://reference.wolfram.com/language/ref/Sin.html"
+                     ],
+                     "OwnValues" -> None,
+                     "UpValues" -> None,
+                     "DownValues" -> None,
+                     "SubValues" -> None,
+                     "DefaultValues" -> None,
+                     "NValues" -> None,
+                     "FormatValues" -> None,
+                     "Options" -> None,
+                     "Attributes" -> {Listable, NumericFunction, Protected},
+                     "FullName" -> "System`Sin"
+                    ],
+                    False
+                   ]
+                  ],
+                  "|",
+                  "Cos"
+                 }
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[17]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell["after ::", "Subsection"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[{"Hold", "[", RowBox[{"f", "::", "a_b"}], "]"}],
+                  "//",
+                  "FullForm"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[18]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {"MessageName", "[", RowBox[{"f", ",", "\"a_b\""}], "]"}
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[18]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {"ToExpression", "[", "\"Hold[f::a_b]//FullForm\"", "]"}
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[19]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {
+                      "Times",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[
+                         {"MessageName", "[", RowBox[{"f", ",", "\"a\""}], "]"}
+                        ],
+                        ",",
+                        RowBox[{"Blank", "[", "b", "]"}]
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[19]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[
+                   {"Hold", "[", RowBox[{"f", "::", RowBox[{"!", "a"}]}], "]"}
+                  ],
+                  "//",
+                  "FullForm"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[20]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {
+                      "MessageName",
+                      "[",
+                      RowBox[{"f", ",", RowBox[{"Not", "[", "a", "]"}]}],
+                      "]"
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[20]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {"ToExpression", "[", "\"Hold[f::!a]//FullForm\"", "]"}
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[21]:="
+              ],
+              Cell[
+               "ToExpression::sntx: Invalid syntax in or before \"Hold[f::!a]//FullForm\".\n                                                         ^",
+               "Message",
+               "MSG",
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[21]:="
+              ],
+              Cell[BoxData["$Failed"], "Output", CellLabel -> "Out[21]="]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[{"Hold", "[", RowBox[{"f", "::", "#a"}], "]"}],
+                  "//",
+                  "FullForm"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[22]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {"MessageName", "[", RowBox[{"f", ",", "\"#a\""}], "]"}
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[22]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {"ToExpression", "[", "\"Hold[f::#a]//FullForm\"", "]"}
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[23]:="
+              ],
+              Cell[
+               "ToExpression::sntx: Invalid syntax in or before \"Hold[f::#a]//FullForm\".\n                                                         ^",
+               "Message",
+               "MSG",
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[23]:="
+              ],
+              Cell[BoxData["$Failed"], "Output", CellLabel -> "Out[23]="]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Operator precedence", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell["LeftTee UpTee", "Subsection"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "FullForm",
+                  "[",
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[{"a", "\[LeftTee]", RowBox[{"b", "\[UpTee]", "c"}]}],
+                    "]"
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[24]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {
+                      "LeftTee",
+                      "[",
+                      RowBox[
+                       {
+                        "a",
+                        ",",
+                        RowBox[{"UpTee", "[", RowBox[{"b", ",", "c"}], "]"}]
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[24]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "FullForm",
+                  "[",
+                  RowBox[
+                   {
+                    "ToExpression",
+                    "[",
+                    "\"Hold[a \[LeftTee] b \[UpTee] c]\"",
+                    "]"
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[25]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Hold",
+                    "[",
+                    RowBox[
+                     {
+                      "UpTee",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[{"LeftTee", "[", RowBox[{"a", ",", "b"}], "]"}],
+                        ",",
+                        "c"
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[25]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Escape", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell["end-line escape", "Subsection"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[{"ToExpression", "[", "\"a\\\\\n  b\"", "]"}]
+               ],
+               "Input",
+               CellLabel -> "In[28]:="
+              ],
+              Cell[BoxData["ab"], "Output", CellLabel -> "Out[28]="]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData["a\\\[IndentingNewLine]\:f39f\:f39fb"],
+               "Input",
+               CellLabel -> "In[27]:="
+              ],
+              Cell[
+               BoxData[RowBox[{"a", "  ", "b"}]],
+               "Output",
+               CellLabel -> "Out[27]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ StyleDefinitions -> "Default.nb"
+]

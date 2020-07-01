@@ -1,0 +1,3225 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell[
+      "Wolfram\:8bed\:8a00\:4e2d\:7684\:4f5c\:7528\:57df\:7ed3\:6784",
+      "Title",
+      Editable -> False,
+      Deletable -> False
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Wolfram\:8bed\:8a00\:4e2d\:7684\:4f5c\:7528\:57df\:7ed3\:6784\:4e3b\:8981\:6709\:5982\:4e0b5\:79cd:",
+         "Text",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "Module",
+           BaseStyle -> "Hyperlink",
+           ButtonData -> "Module"
+          ]
+         ],
+         "ItemNumbered",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "Block",
+           BaseStyle -> "Hyperlink",
+           ButtonData -> "Block"
+          ]
+         ],
+         "ItemNumbered",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "With",
+           BaseStyle -> "Hyperlink",
+           ButtonData -> "With"
+          ]
+         ],
+         "ItemNumbered",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "DynamicModule",
+           BaseStyle -> "Hyperlink",
+           ButtonData -> "DynamicModule"
+          ]
+         ],
+         "ItemNumbered",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ],
+        Cell[
+         TextData[
+          ButtonBox[
+           "\:547d\:540d\:7a7a\:95f4",
+           BaseStyle -> "Hyperlink",
+           ButtonData -> "Namespace"
+          ]
+         ],
+         "ItemNumbered",
+         Editable -> False,
+         Deletable -> False,
+         CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Module",
+         "Section",
+         Editable -> False,
+         Deletable -> False,
+         CellTags -> "Module"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:793a\:4f8b",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:521b\:5efa\:5c40\:90e8\:53d8\:91cf",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Module",
+                  "[",
+                  RowBox[{RowBox[{"{", "x", "}"}], ",", "x"}],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["x$2281"],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:8bcd\:6cd5(lexical)\:5b9a\:754c",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"m", "=", RowBox[{"i", "^", "2"}]}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Module",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", RowBox[{"i", "=", "a"}], "}"}],
+                     ",",
+                     RowBox[{"i", "+", "m"}]
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[RowBox[{"a", "+", SuperscriptBox["i", "2"]}]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[2]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:4e0d\:4f1a\:88ab\:4f7f\:7528\:7684\:53d8\:91cf\:5c06\:81ea\:52a8\:79fb\:9664",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {
+                   "Module",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", "x", "}"}],
+                     ",",
+                     RowBox[
+                      {
+                       RowBox[{"Print", "[", "x", "]"}],
+                       ";",
+                       RowBox[{"Attributes", "[", "x", "]"}]
+                      }
+                     ]
+                    }
+                   ],
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{"Names", "[", "\"x*\"", "]"}]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["x$2289"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[RowBox[{"{", "Temporary", "}"}]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[RowBox[{"{", "\"x\"", "}"}]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "Out[2]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:601d\:8003\:9898",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Module", "CodeText"],
+                 "\:53ea\:5c40\:90e8\:5316\:90a3\:4e9b\:5728\:8bcd\:6cd5\:610f\:4e49\:4e0a\:51fa\:73b0\:7684\:53d8\:91cf"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"x", "=", "1"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Module",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", RowBox[{"x", "=", "2"}], "}"}],
+                     ",",
+                     "\[IndentingNewLine]",
+                     RowBox[
+                      {
+                       RowBox[{"Print", "[", "x", "]"}],
+                       ";",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {"Print", "[", RowBox[{"Symbol", "[", "\"x\"", "]"}], "]"}
+                       ],
+                       ";"
+                      }
+                     ]
+                    }
+                   ],
+                   "\[IndentingNewLine]",
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{"Print", "[", "x", "]"}]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["2"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData["1"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData["1"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:5ef6\:4f38\:9605\:8bfb",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            TextData[
+             {
+              ButtonBox[
+               "\:6a21\:5757\:548c\:5c40\:90e8\:53d8\:91cf",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/ModulesAndLocalVariables"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:6a21\:5757\:5de5\:4f5c\:65b9\:5f0f",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/HowModulesWork"
+              ]
+             }
+            ],
+            "Text",
+            Editable -> False,
+            Deletable -> False
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "Block",
+         "Section",
+         Editable -> False,
+         Deletable -> False,
+         CellTags -> "Block"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:793a\:4f8b",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:52a8\:6001\:5b9a\:754c",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"m", "=", RowBox[{"i", "^", "2"}]}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Block",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", RowBox[{"i", "=", "a"}], "}"}],
+                     ",",
+                     RowBox[{"i", "+", "m"}]
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[RowBox[{"a", "+", SuperscriptBox["a", "2"]}]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[2]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:5c40\:90e8\:5730\:8fdb\:884c\:6df1\:5ea6\:9012\:5f52",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {RowBox[{RowBox[{"cl", "[", "1", "]"}], "=", "1"}], ";"}
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {"cl", "[", RowBox[{"n_Integer", "?", "EvenQ"}], "]"}
+                   ],
+                   ":=",
+                   RowBox[
+                    {
+                     RowBox[{"cl", "[", RowBox[{"n", "/", "2"}], "]"}],
+                     "+",
+                     "1"
+                    }
+                   ]
+                  }
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {"cl", "[", RowBox[{"n_Integer", "?", "OddQ"}], "]"}
+                   ],
+                   ":=",
+                   RowBox[
+                    {
+                     RowBox[
+                      {"cl", "[", RowBox[{RowBox[{"3", "n"}], "+", "1"}], "]"}
+                     ],
+                     "+",
+                     "1"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Block",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[
+                      {"{", RowBox[{"$RecursionLimit", "=", "Infinity"}], "}"}
+                     ],
+                     ",",
+                     RowBox[{"cl", "[", "9780657630", "]"}]
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["1133"],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[4]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:5c40\:90e8\:5730\:6e05\:9664\:503c",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"x", "=", "0"}], ";"}],
+                 "\n",
+                 RowBox[
+                  {
+                   "Block",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", "x", "}"}],
+                     ",",
+                     RowBox[
+                      {
+                       "Print",
+                       "[",
+                       RowBox[
+                        {
+                         "Expand",
+                         "[",
+                         RowBox[
+                          {RowBox[{"(", RowBox[{"1", "+", "x"}], ")"}], "^", "3"}
+                         ],
+                         "]"
+                        }
+                       ],
+                       "]"
+                      }
+                     ]
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "1",
+                  "+",
+                  RowBox[{"3", " ", "x"}],
+                  "+",
+                  RowBox[{"3", " ", SuperscriptBox["x", "2"]}],
+                  "+",
+                  SuperscriptBox["x", "3"]
+                 }
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"x", "=", "0"}], ";"}],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       "Block",
+                       "[",
+                       RowBox[
+                        {
+                         RowBox[{"{", "x", "}"}],
+                         ",",
+                         RowBox[
+                          {
+                           "Expand",
+                           "[",
+                           RowBox[
+                            {RowBox[{"(", RowBox[{"1", "+", "x"}], ")"}], "^", "3"}
+                           ],
+                           "]"
+                          }
+                         ]
+                        }
+                       ],
+                       "]"
+                      }
+                     ],
+                     "//",
+                     "Trace"
+                    }
+                   ],
+                   "//",
+                   "Column"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 GridBox[
+                  {
+                   {
+                    TagBox[
+                     RowBox[
+                      {
+                       "Block",
+                       "[",
+                       RowBox[
+                        {
+                         RowBox[{"{", "x", "}"}],
+                         ",",
+                         RowBox[
+                          {
+                           "Expand",
+                           "[",
+                           SuperscriptBox[
+                            RowBox[{"(", RowBox[{"1", "+", "x"}], ")"}],
+                            "3"
+                           ],
+                           "]"
+                          }
+                         ]
+                        }
+                       ],
+                       "]"
+                      }
+                     ],
+                     HoldForm
+                    ]
+                   },
+                   {
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[
+                       {
+                        TagBox[
+                         RowBox[
+                          {
+                           "Expand",
+                           "[",
+                           SuperscriptBox[
+                            RowBox[{"(", RowBox[{"1", "+", "x"}], ")"}],
+                            "3"
+                           ],
+                           "]"
+                          }
+                         ],
+                         HoldForm
+                        ],
+                        ",",
+                        TagBox[
+                         RowBox[
+                          {
+                           "1",
+                           "+",
+                           RowBox[{"3", " ", "x"}],
+                           "+",
+                           RowBox[{"3", " ", SuperscriptBox["x", "2"]}],
+                           "+",
+                           SuperscriptBox["x", "3"]
+                          }
+                         ],
+                         HoldForm
+                        ]
+                       }
+                      ],
+                      "}"
+                     }
+                    ]
+                   },
+                   {
+                    TagBox[
+                     RowBox[
+                      {
+                       "1",
+                       "+",
+                       RowBox[{"3", " ", "x"}],
+                       "+",
+                       RowBox[{"3", " ", SuperscriptBox["x", "2"]}],
+                       "+",
+                       SuperscriptBox["x", "3"]
+                      }
+                     ],
+                     HoldForm
+                    ]
+                   },
+                   {
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[
+                       {
+                        RowBox[
+                         {
+                          "{",
+                          RowBox[{TagBox["x", HoldForm], ",", TagBox["0", HoldForm]}],
+                          "}"
+                         }
+                        ],
+                        ",",
+                        TagBox[RowBox[{"3", " ", "0"}], HoldForm],
+                        ",",
+                        TagBox["0", HoldForm]
+                       }
+                      ],
+                      "}"
+                     }
+                    ]
+                   },
+                   {
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[
+                       {
+                        RowBox[
+                         {
+                          "{",
+                          RowBox[
+                           {
+                            RowBox[
+                             {
+                              "{",
+                              RowBox[{TagBox["x", HoldForm], ",", TagBox["0", HoldForm]}],
+                              "}"
+                             }
+                            ],
+                            ",",
+                            TagBox[SuperscriptBox["0", "2"], HoldForm],
+                            ",",
+                            TagBox["0", HoldForm]
+                           }
+                          ],
+                          "}"
+                         }
+                        ],
+                        ",",
+                        TagBox[RowBox[{"3", " ", "0"}], HoldForm],
+                        ",",
+                        TagBox["0", HoldForm]
+                       }
+                      ],
+                      "}"
+                     }
+                    ]
+                   },
+                   {
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[
+                       {
+                        RowBox[
+                         {
+                          "{",
+                          RowBox[{TagBox["x", HoldForm], ",", TagBox["0", HoldForm]}],
+                          "}"
+                         }
+                        ],
+                        ",",
+                        TagBox[SuperscriptBox["0", "3"], HoldForm],
+                        ",",
+                        TagBox["0", HoldForm]
+                       }
+                      ],
+                      "}"
+                     }
+                    ]
+                   },
+                   {
+                    TagBox[
+                     RowBox[{"1", "+", "0", "+", "0", "+", "0"}],
+                     HoldForm
+                    ]
+                   },
+                   {TagBox["1", HoldForm]}
+                  },
+                  DefaultBaseStyle -> "Column",
+                  GridBoxAlignment -> {"Columns" -> {{Left}}},
+                  GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}
+                 ],
+                 "Column"
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "Out[2]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Table", "CodeText"],
+                 "\:3001",
+                 StyleBox["Plot", "CodeText"],
+                 "\:7b49\:540c\:6837\:4e5f\:662f\:52a8\:6001\:5b9a\:754c\:7684\:7ed3\:6784"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10003.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {
+                   RowBox[{"f", "[", "x_", "]"}],
+                   ":=",
+                   RowBox[{"i", "*", "x"}]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Table",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"f", "[", "i", "]"}],
+                     ",",
+                     RowBox[{"{", RowBox[{"i", ",", "5"}], "}"}]
+                    }
+                   ],
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Table",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"f", "[", "j", "]"}],
+                     ",",
+                     RowBox[{"{", RowBox[{"j", ",", "5"}], "}"}]
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10003.},
+               CellLabel -> "In[1]:="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "{",
+               RowBox[{"1", ",", "4", ",", "9", ",", "16", ",", "25"}],
+               "}"
+              }
+             ]
+            ],
+            "Output",
+            CellLabel -> "Out[2]="
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "{",
+               RowBox[
+                {
+                 "i",
+                 ",",
+                 RowBox[{"2", " ", "i"}],
+                 ",",
+                 RowBox[{"3", " ", "i"}],
+                 ",",
+                 RowBox[{"4", " ", "i"}],
+                 ",",
+                 RowBox[{"5", " ", "i"}]
+                }
+               ],
+               "}"
+              }
+             ]
+            ],
+            "Output",
+            CellLabel -> "Out[3]="
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:52a8\:6001\:5b9a\:754c\:5728\:76d1\:89c6\:5668\:4e0a\:7684\:5e94\:7528",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "FindRoot",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{RowBox[{"x", "^", "2"}], "-", "2"}],
+                    ",",
+                    RowBox[{"{", RowBox[{"x", ",", "1"}], "}"}],
+                    ",",
+                    RowBox[
+                     {
+                      "EvaluationMonitor",
+                      "\[RuleDelayed]",
+                      RowBox[
+                       {
+                        "Print",
+                        "[",
+                        RowBox[
+                         {
+                          "\"x=\"",
+                          ",",
+                          "x",
+                          ",",
+                          "\" Bias:\"",
+                          ",",
+                          RowBox[
+                           {
+                            "Abs",
+                            "[",
+                            RowBox[{RowBox[{"x", "^", "2"}], "-", "2"}],
+                            "]"
+                           }
+                          ]
+                         }
+                        ],
+                        "]"
+                       }
+                      ]
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "1.`"
+                  }
+                 ],
+                 "x="1." Bias:"1.,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.5`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "0.25`"
+                  }
+                 ],
+                 "x="1.5" Bias:"0.25,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.4166666666666667`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "0.006944444444444642`"
+                  }
+                 ],
+                 "x="1.4166666666666667" Bias:"0.006944444444444642,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.4142156862745099`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "6.007304882871267`*^-6"
+                  }
+                 ],
+                 "x="1.4142156862745099" Bias:"6.007304882871267*^-6,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.4142135623746899`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "4.510614104447086`*^-12"
+                  }
+                 ],
+                 "x="1.4142135623746899" Bias:"4.510614104447086*^-12,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"x=\"",
+                   "\[InvisibleSpace]",
+                   "1.4142135623730951`",
+                   "\[InvisibleSpace]",
+                   "\" Bias:\"",
+                   "\[InvisibleSpace]",
+                   "4.440892098500626`*^-16"
+                  }
+                 ],
+                 "x="1.4142135623730951" Bias:"4.440892098500626*^-16,
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {"{", RowBox[{"x", "\[Rule]", "1.4142135623730951`"}], "}"}
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:601d\:8003\:9898",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Block", "CodeText"],
+                 "\:5c40\:90e8\:5316\:53d8\:91cf\:7684\:503c"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"x", "=", "1"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Block",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", RowBox[{"x", "=", "2"}], "}"}],
+                     ",",
+                     "\[IndentingNewLine]",
+                     RowBox[
+                      {
+                       RowBox[{"Print", "[", "x", "]"}],
+                       ";",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {"Print", "[", RowBox[{"Symbol", "[", "\"x\"", "]"}], "]"}
+                       ],
+                       ";"
+                      }
+                     ]
+                    }
+                   ],
+                   "\[IndentingNewLine]",
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{"Print", "[", "x", "]"}]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["2"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData["2"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData["1"],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:5ef6\:4f38\:9605\:8bfb",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            TextData[
+             {
+              ButtonBox[
+               "\:5757\:4e0e\:6a21\:5757\:7684\:6bd4\:8f83",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/BlocksComparedWithModules"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:5757\:548c\:5c40\:90e8\:503c",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/BlocksAndLocalValues"
+              ]
+             }
+            ],
+            "Text",
+            Editable -> False,
+            Deletable -> False
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "With",
+         "Section",
+         Editable -> False,
+         Deletable -> False,
+         CellTags -> "With"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:793a\:4f8b",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:628a\:503c\:63d2\:5165\:5230\:4fdd\:6301(held)\:8868\:8fbe\:5f0f\:4e2d",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Table",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {
+                      "With",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[{"{", RowBox[{"i", "=", "i"}], "}"}],
+                        ",",
+                        RowBox[{"Hold", "[", "i", "]"}]
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[{"{", RowBox[{"i", ",", "5"}], "}"}]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "{",
+                  RowBox[
+                   {
+                    RowBox[{"Hold", "[", "1", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "2", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "3", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "4", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "5", "]"}]
+                   }
+                  ],
+                  "}"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell["\:601d\:8003\:9898", "Subsection"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["With", "CodeText"],
+                 "\:7684\:5b9e\:8d28\:662f\:66ff\:6362"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {
+                   "With",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[{"{", RowBox[{"x", "=", "y"}], "}"}],
+                     ",",
+                     "\[IndentingNewLine]",
+                     RowBox[
+                      {
+                       RowBox[{"x", "=", "1"}],
+                       ";",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {
+                         RowBox[
+                          {
+                           "Evaluate",
+                           "[",
+                           RowBox[{"Symbol", "[", "\"x\"", "]"}],
+                           "]"
+                          }
+                         ],
+                         "=",
+                         "2"
+                        }
+                       ],
+                       ";"
+                      }
+                     ]
+                    }
+                   ],
+                   "\[IndentingNewLine]",
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "<|",
+                   RowBox[
+                    {
+                     RowBox[{"\"x\"", "\[Rule]", "x"}],
+                     ",",
+                     RowBox[{"\"y\"", "\[Rule]", "y"}]
+                    }
+                   ],
+                   "|>"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "\[LeftAssociation]",
+                  RowBox[
+                   {
+                    RowBox[{"\"x\"", "\[Rule]", "2"}],
+                    ",",
+                    RowBox[{"\"y\"", "\[Rule]", "1"}]
+                   }
+                  ],
+                  "\[RightAssociation]"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[2]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Module", "CodeText"],
+                 "\:548c",
+                 StyleBox["Block", "CodeText"],
+                 "\:65e0\:6cd5\:5c06\:503c\:63d2\:5165\:5230\:4fdd\:6301(held)\:8868\:8fbe\:5f0f\:4e2d"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Table",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {
+                      "Module",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[{"{", RowBox[{"i", "=", "i"}], "}"}],
+                        ",",
+                        RowBox[{"Hold", "[", "i", "]"}]
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[{"{", RowBox[{"i", ",", "5"}], "}"}]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "{",
+                  RowBox[
+                   {
+                    RowBox[{"Hold", "[", "i$2981", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i$2982", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i$2983", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i$2984", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i$2985", "]"}]
+                   }
+                  ],
+                  "}"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Table",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {
+                      "Block",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[{"{", RowBox[{"i", "=", "i"}], "}"}],
+                        ",",
+                        RowBox[{"Hold", "[", "i", "]"}]
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[{"{", RowBox[{"i", ",", "5"}], "}"}]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "{",
+                  RowBox[
+                   {
+                    RowBox[{"Hold", "[", "i", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i", "]"}],
+                    ",",
+                    RowBox[{"Hold", "[", "i", "]"}]
+                   }
+                  ],
+                  "}"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["With", "CodeText"],
+                 "\:548c\:666e\:901a\:66ff\:6362\:7684\:533a\:522b"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "With",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {"{", RowBox[{"y", "=", RowBox[{"x", "+", "a"}]}], "}"}
+                    ],
+                    ",",
+                    RowBox[
+                     {
+                      "Function",
+                      "[",
+                      RowBox[
+                       {RowBox[{"{", "x", "}"}], ",", RowBox[{"x", "+", "y"}]}
+                      ],
+                      "]"
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Function",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x$", "}"}],
+                    ",",
+                    RowBox[
+                     {"x$", "+", RowBox[{"(", RowBox[{"a", "+", "x"}], ")"}]}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[
+                   {
+                    "Unevaluated",
+                    "[",
+                    RowBox[
+                     {
+                      "Function",
+                      "[",
+                      RowBox[
+                       {RowBox[{"{", "x", "}"}], ",", RowBox[{"x", "+", "y"}]}
+                      ],
+                      "]"
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  "/.",
+                  RowBox[
+                   {
+                    "{",
+                    RowBox[
+                     {
+                      RowBox[{"HoldPattern", "[", "y", "]"}],
+                      "\[Rule]",
+                      RowBox[{"x", "+", "a"}]
+                     }
+                    ],
+                    "}"
+                   }
+                  ]
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Function",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x", "}"}],
+                    ",",
+                    RowBox[
+                     {"x", "+", RowBox[{"(", RowBox[{"a", "+", "x"}], ")"}]}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:5ef6\:4f38\:9605\:8bfb",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            TextData[
+             {
+              ButtonBox[
+               "\:5c40\:90e8\:5e38\:91cf",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/LocalConstants"
+              ],
+              " \[FilledVerySmallSquare] ",
+              Cell[
+               BoxData[
+                FormBox[
+                 ButtonBox[
+                  RowBox[
+                   {
+                    RowBox[{"How", " ", "to"}],
+                    "|",
+                    " ",
+                    RowBox[
+                     {
+                      "\:5728",
+                      " ",
+                      "Dynamic",
+                      " ",
+                      "\:6216",
+                      " ",
+                      "Manipulate",
+                      " ",
+                      "\:5185\:90e8\:8ba1\:7b97\:8868\:8fbe\:5f0f"
+                     }
+                    ]
+                   }
+                  ],
+                  BaseStyle -> "Link",
+                  ButtonData -> "paclet:howto/EvaluateExpressionsInsideDynamicOrManipulate"
+                 ],
+                 TraditionalForm
+                ]
+               ]
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:7eaf\:51fd\:6570\:548c\:89c4\:5219\:4e2d\:7684\:53d8\:91cf",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/VariablesInPureFunctionsAndRules"
+              ]
+             }
+            ],
+            "Text",
+            Editable -> False,
+            Deletable -> False
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "DynamicModule",
+         "Section",
+         Editable -> False,
+         Deletable -> False,
+         CellTags -> "DynamicModule"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:793a\:4f8b",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Module", "CodeText"],
+                 "\:5bf9\:53d8\:91cf\:7684\:5c40\:57df\:5316\:53d1\:751f\:5728\:5185\:6838\:4e2d\n\:800c",
+                 StyleBox["DynamicModule", "CodeText"],
+                 "\:5bf9\:53d8\:91cf\:7684\:5c40\:57df\:5316\:53d1\:751f\:5728\:524d\:7aef"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[
+                   {
+                    "Module",
+                    "[",
+                    RowBox[
+                     {
+                      RowBox[{"{", "x", "}"}],
+                      ",",
+                      RowBox[
+                       {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                      ]
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  "//",
+                  "FullForm"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "Slider",
+                    "[",
+                    RowBox[{"Dynamic", "[", "x$2998", "]"}],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]//FullForm="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  RowBox[
+                   {
+                    "DynamicModule",
+                    "[",
+                    RowBox[
+                     {
+                      RowBox[{"{", "x", "}"}],
+                      ",",
+                      RowBox[
+                       {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                      ]
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  "//",
+                  "FullForm"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                TagBox[
+                 StyleBox[
+                  RowBox[
+                   {
+                    "DynamicModule",
+                    "[",
+                    RowBox[
+                     {
+                      RowBox[{"List", "[", "x", "]"}],
+                      ",",
+                      RowBox[
+                       {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                      ],
+                      ",",
+                      RowBox[
+                       {
+                        "RuleDelayed",
+                        "[",
+                        RowBox[
+                         {"DynamicModuleValues", ",", RowBox[{"List", "[", "]"}]}
+                        ],
+                        "]"
+                       }
+                      ]
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ShowSpecialCharacters -> False,
+                  ShowStringCharacters -> True,
+                  NumberMarks -> True
+                 ],
+                 FullForm
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]//FullForm="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["DynamicModule", "CodeText"],
+                 "\:5728\:7b14\:8bb0\:672c\:5185\:7684\:6846\:7b26\:8868\:793a"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.}
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "DynamicModule",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x", "}"}],
+                    ",",
+                    RowBox[
+                     {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                DynamicModuleBox[
+                 {x$$ = 0.},
+                 SliderBox[Dynamic[x$$]],
+                 DynamicModuleValues :> { }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  DynamicModuleBox[
+                   {x$$ = 0.},
+                   SliderBox[Dynamic[x$$]],
+                   DynamicModuleValues :> { }
+                  ],
+                  "//",
+                  "ToBoxes"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "DynamicModuleBox",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", RowBox[{"x$$", "=", "0.`"}], "}"}],
+                    ",",
+                    RowBox[
+                     {
+                      "SliderBox",
+                      "[",
+                      RowBox[{"Dynamic", "[", "x$$", "]"}],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[
+                     {
+                      "DynamicModuleValues",
+                      "\[RuleDelayed]",
+                      RowBox[{"{", "}"}]
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  DynamicModuleBox[
+                   {x$$ = 0.5740000000000001},
+                   SliderBox[Dynamic[x$$]],
+                   DynamicModuleValues :> { }
+                  ],
+                  "//",
+                  "ToBoxes"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "DynamicModuleBox",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {"{", RowBox[{"x$$", "=", "0.5740000000000001`"}], "}"}
+                    ],
+                    ",",
+                    RowBox[
+                     {
+                      "SliderBox",
+                      "[",
+                      RowBox[{"Dynamic", "[", "x$$", "]"}],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[
+                     {
+                      "DynamicModuleValues",
+                      "\[RuleDelayed]",
+                      RowBox[{"{", "}"}]
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Module",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x", "}"}],
+                    ",",
+                    RowBox[
+                     {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[SliderBox[Dynamic[x$3095]]],
+               "Output",
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:601d\:8003\:9898",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["DynamicModule", "CodeText"],
+                 "\:5728\:7a7a\:95f4\:533a\:57df\:4e0a\:8fdb\:884c\:5c40\:90e8\:5316\:ff0c\:590d\:5236\:65f6\:63a7\:4ef6\:8fde\:63a5\:5230\:72ec\:7acb\:7684\:53d8\:91cf"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "DynamicModule",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x", "}"}],
+                    ",",
+                    RowBox[
+                     {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook,
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                DynamicModuleBox[
+                 {x$$ = 0.484},
+                 SliderBox[Dynamic[x$$]],
+                 DynamicModuleValues :> { }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook,
+               CellLabel -> "Out[1]="
+              ],
+              Cell[
+               BoxData[
+                DynamicModuleBox[
+                 {x$$ = 0.33},
+                 SliderBox[Dynamic[x$$]],
+                 DynamicModuleValues :> { }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook
+              ],
+              Cell[
+               TextData[
+                {
+                 StyleBox["Module", "CodeText"],
+                 "\:7684\:5c40\:90e8\:53d8\:91cf\:88ab\:5185\:6838\:8bb0\:5f55\:ff0c\:590d\:5236\:65f6\:63a7\:4ef6\:8fde\:63a5\:5230\:540c\:4e00\:5185\:6838\:53d8\:91cf\n(\:6ce8\:610f\:ff1a\:8fd9\:91cc\:5355\:5143\:6240\:7528\:7684\:4e0a\:4e0b\:6587\:662f\:7b14\:8bb0\:672c\:4e0a\:4e0b\:6587\:ff0c\:800c\:4e0d\:662f\:5355\:5143\:7f16\:7ec4\:4e0a\:4e0b\:6587\:3002)"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "Module",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"{", "x", "}"}],
+                    ",",
+                    RowBox[
+                     {"Slider", "[", RowBox[{"Dynamic", "[", "x", "]"}], "]"}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ]
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook,
+               CellLabel -> "In[2]:="
+              ],
+              Cell[
+               BoxData[SliderBox[Dynamic[x$3297]]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook,
+               CellLabel -> "Out[2]="
+              ],
+              Cell[
+               BoxData[SliderBox[Dynamic[x$3297]]],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellContext -> Notebook
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:5ef6\:4f38\:9605\:8bfb",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            TextData[
+             {
+              ButtonBox[
+               "\:52a8\:6001\:7b80\:4ecb",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/IntroductionToDynamic"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:9ad8\:7ea7\:52a8\:6001\:529f\:80fd",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/AdvancedDynamicFunctionality"
+              ]
+             }
+            ],
+            "Text",
+            Editable -> False,
+            Deletable -> False
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         "\:547d\:540d\:7a7a\:95f4",
+         "Section",
+         CellTags -> "Namespace"
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:793a\:4f8b",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               "\:6bcf\:4e2a\:5355\:5143\:7ec4\:90fd\:4f7f\:7528\:72ec\:7acb\:7684\:4e0a\:4e0b\:6587",
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData["$Context"],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData["\"Cell$$1765`\""],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[1]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["Begin", "CodeText"],
+                 "-",
+                 StyleBox["End", "CodeText"],
+                 "\:4e0e",
+                 StyleBox["BeginPackage", "CodeText"],
+                 "-",
+                 StyleBox["EndPackage", "CodeText"],
+                 "\:7684\:4f5c\:7528\:5bf9\:6bd4"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {
+                   "Print",
+                   "[",
+                   RowBox[
+                    {
+                     "\"0:\"",
+                     ",",
+                     "$Context",
+                     ",",
+                     "\"|\"",
+                     ",",
+                     "$ContextPath"
+                    }
+                   ],
+                   "]"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {RowBox[{"BeginPackage", "[", "\"test`\"", "]"}], ";"}
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "\t",
+                   RowBox[
+                    {
+                     "Print",
+                     "[",
+                     RowBox[
+                      {
+                       "\"1:\"",
+                       ",",
+                       "$Context",
+                       ",",
+                       "\"|\"",
+                       ",",
+                       "$ContextPath"
+                      }
+                     ],
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "    ",
+                   RowBox[{RowBox[{"Begin", "[", "\"test1`\"", "]"}], ";"}]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "        ",
+                   RowBox[
+                    {
+                     "Print",
+                     "[",
+                     RowBox[
+                      {
+                       "\"2:\"",
+                       ",",
+                       "$Context",
+                       ",",
+                       "\"|\"",
+                       ",",
+                       "$ContextPath"
+                      }
+                     ],
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{"    ", RowBox[{RowBox[{"End", "[", "]"}], ";"}]}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "    ",
+                   RowBox[
+                    {
+                     "Print",
+                     "[",
+                     RowBox[
+                      {
+                       "\"3:\"",
+                       ",",
+                       "$Context",
+                       ",",
+                       "\"|\"",
+                       ",",
+                       "$ContextPath"
+                      }
+                     ],
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "    ",
+                   RowBox[{RowBox[{"Begin", "[", "\"`test2`\"", "]"}], ";"}]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "        ",
+                   RowBox[
+                    {
+                     "Print",
+                     "[",
+                     RowBox[
+                      {
+                       "\"4:\"",
+                       ",",
+                       "$Context",
+                       ",",
+                       "\"|\"",
+                       ",",
+                       "$ContextPath"
+                      }
+                     ],
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{"    ", RowBox[{RowBox[{"End", "[", "]"}], ";"}]}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "    ",
+                   RowBox[
+                    {
+                     "Print",
+                     "[",
+                     RowBox[
+                      {
+                       "\"5:\"",
+                       ",",
+                       "$Context",
+                       ",",
+                       "\"|\"",
+                       ",",
+                       "$ContextPath"
+                      }
+                     ],
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"EndPackage", "[", "]"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "Print",
+                   "[",
+                   RowBox[
+                    {
+                     "\"6:\"",
+                     ",",
+                     "$Context",
+                     ",",
+                     "\"|\"",
+                     ",",
+                     "$ContextPath"
+                    }
+                   ],
+                   "]"
+                  }
+                 ]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"0:\"",
+                   "\[InvisibleSpace]",
+                   "\"Cell$$1768`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"Cell$$1768`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "0:""Cell$$1768`""|"{"Cell$$1768`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"1:\"",
+                   "\[InvisibleSpace]",
+                   "\"test`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"test`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "1:""test`""|"{"test`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"2:\"",
+                   "\[InvisibleSpace]",
+                   "\"test1`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"test`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "2:""test1`""|"{"test`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"3:\"",
+                   "\[InvisibleSpace]",
+                   "\"test`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"test`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "3:""test`""|"{"test`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"4:\"",
+                   "\[InvisibleSpace]",
+                   "\"test`test2`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"test`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "4:""test`test2`""|"{"test`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"5:\"",
+                   "\[InvisibleSpace]",
+                   "\"test`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {"{", RowBox[{"\"test`\"", ",", "\"System`\""}], "}"}
+                   ]
+                  }
+                 ],
+                 "5:""test`""|"{"test`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   "\"6:\"",
+                   "\[InvisibleSpace]",
+                   "\"Cell$$1768`\"",
+                   "\[InvisibleSpace]",
+                   "\"|\"",
+                   "\[InvisibleSpace]",
+                   RowBox[
+                    {
+                     "{",
+                     RowBox[
+                      {"\"test`\"", ",", "\"Cell$$1768`\"", ",", "\"System`\""}
+                     ],
+                     "}"
+                    }
+                   ]
+                  }
+                 ],
+                 "6:""Cell$$1768`""|"{"test`", "Cell$$1768`", "System`"},
+                 Editable -> False
+                ]
+               ],
+               "Print",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10001.},
+               CellLabel -> "\:6b63\:5728\:8ba1\:7b97In[1]:="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 "\:793a\:4f8b\:7a0b\:7a0b\:5e8f\:5305",
+                 Cell[
+                  BoxData[
+                   ButtonBox[
+                    PaneSelectorBox[
+                     {
+                      False -> StyleBox[
+                       "\"ExampleData/Collatz.m\"",
+                       "Hyperlink",
+                       StripOnInput -> False
+                      ],
+                      True -> TagBox[
+                       StyleBox[
+                        "\"ExampleData/Collatz.m\"",
+                        "HyperlinkActive",
+                        StripOnInput -> False
+                       ],
+                       StatusArea[#1, "ExampleData/Collatz.m"] & ,
+                       TagBoxNote -> "ExampleData/Collatz.m"
+                      ]
+                     },
+                     Dynamic[CurrentValue["MouseOver"]],
+                     FrameMargins -> 0,
+                     ImageSize -> Automatic
+                    ],
+                    Appearance -> "Frameless",
+                    ButtonFunction :> SystemOpen["ExampleData/Collatz.m"],
+                    Evaluator -> Automatic,
+                    Method -> "Preemptive"
+                   ]
+                  ]
+                 ],
+                 "\:4e2d\:6709\:5982\:4e0b\:4ee3\:7801\:ff1a"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[
+                  {RowBox[{"BeginPackage", "[", "\"Collatz`\"", "]"}], "\n"}
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[{"Collatz", "::", "usage"}],
+                     " ",
+                     "=",
+                     "\n",
+                     "        ",
+                     "\"Collatz[n] gives a list of the iterates in the 3n+1 problem,\n        starting from n. The conjecture is that this sequence always\n        terminates.\""
+                    }
+                   ],
+                   "\n"
+                  }
+                 ],
+                 "\n",
+                 RowBox[
+                  {RowBox[{"Begin", "[", "\"`Private`\"", "]"}], "\n"}
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[{"Collatz", "[", "1", "]"}],
+                     " ",
+                     ":=",
+                     " ",
+                     RowBox[{"{", "1", "}"}]
+                    }
+                   ],
+                   "\n"
+                  }
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[{"Collatz", "[", "n_Integer", "]"}],
+                     "  ",
+                     ":=",
+                     " ",
+                     RowBox[
+                      {
+                       RowBox[
+                        {
+                         "Prepend",
+                         "[",
+                         RowBox[
+                          {
+                           RowBox[
+                            {
+                             "Collatz",
+                             "[",
+                             RowBox[{RowBox[{"3", " ", "n"}], " ", "+", " ", "1"}],
+                             "]"
+                            }
+                           ],
+                           ",",
+                           " ",
+                           "n"
+                          }
+                         ],
+                         "]"
+                        }
+                       ],
+                       " ",
+                       "/;",
+                       " ",
+                       RowBox[
+                        {
+                         RowBox[{"OddQ", "[", "n", "]"}],
+                         " ",
+                         "&&",
+                         " ",
+                         RowBox[{"n", " ", ">", " ", "0"}]
+                        }
+                       ]
+                      }
+                     ]
+                    }
+                   ],
+                   "\n"
+                  }
+                 ],
+                 "\n",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     RowBox[{"Collatz", "[", "n_Integer", "]"}],
+                     " ",
+                     ":=",
+                     " ",
+                     RowBox[
+                      {
+                       RowBox[
+                        {
+                         "Prepend",
+                         "[",
+                         RowBox[
+                          {
+                           RowBox[{"Collatz", "[", RowBox[{"n", "/", "2"}], "]"}],
+                           ",",
+                           " ",
+                           "n"
+                          }
+                         ],
+                         "]"
+                        }
+                       ],
+                       " ",
+                       "/;",
+                       " ",
+                       RowBox[
+                        {
+                         RowBox[{"EvenQ", "[", "n", "]"}],
+                         " ",
+                         "&&",
+                         " ",
+                         RowBox[{"n", " ", ">", " ", "0"}]
+                        }
+                       ]
+                      }
+                     ]
+                    }
+                   ],
+                   "\n"
+                  }
+                 ],
+                 "\n",
+                 RowBox[{RowBox[{"End", "[", " ", "]"}], "\n"}],
+                 "\n",
+                 RowBox[{"EndPackage", "[", " ", "]"}]
+                }
+               ],
+               "Code",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10002.}
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:601d\:8003\:9898",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               TextData[
+                {
+                 StyleBox["x", "CodeText"],
+                 "\:4e0e",
+                 StyleBox["`x", "CodeText"],
+                 "\:7684\:533a\:522b"
+                }
+               ],
+               "Text",
+               Editable -> False,
+               Deletable -> False,
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.}
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"x", "=", "1"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"Begin", "[", "\"`test`\"", "]"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"x", "=", "2"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[
+                  {
+                   "{",
+                   RowBox[
+                    {
+                     RowBox[{"Context", "[", "]"}],
+                     ",",
+                     RowBox[{"Context", "[", "x", "]"}]
+                    }
+                   ],
+                   "}"
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"End", "[", "]"}], ";"}]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "{",
+                  RowBox[{"\"Cell$$1778`test`\"", ",", "\"Cell$$1778`\""}],
+                  "}"
+                 }
+                ]
+               ],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[4]="
+              ],
+              Cell[
+               BoxData[
+                {
+                 RowBox[{RowBox[{"`x", "=", "1"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"Begin", "[", "\"`test`\"", "]"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"`x", "=", "2"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{RowBox[{"End", "[", "]"}], ";"}],
+                 "\[IndentingNewLine]",
+                 RowBox[{"{", RowBox[{"`x", ",", "`test`x"}], "}"}]
+                }
+               ],
+               "Input",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "In[1]:="
+              ],
+              Cell[
+               BoxData[RowBox[{"{", RowBox[{"1", ",", "2"}], "}"}]],
+               "Output",
+               CellGroupingRules -> {"GroupTogetherGrouping", 10000.},
+               CellLabel -> "Out[5]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            "\:5ef6\:4f38\:9605\:8bfb",
+            "Subsection",
+            Editable -> False,
+            Deletable -> False
+           ],
+           Cell[
+            TextData[
+             {
+              ButtonBox[
+               "\:4e0a\:4e0b\:6587",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/Contexts"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:4e0a\:4e0b\:6587\:548c\:7a0b\:5e8f\:5305",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/ContextsAndPackages"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:5efa\:7acb Wolfram \:8bed\:8a00\:7a0b\:5e8f\:5305",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:tutorial/SettingUpWolframLanguagePackages"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:5bf9\:4e0d\:540c\:7684\:7b14\:8bb0\:672c\:81ea\:52a8\:4f7f\:7528\:72ec\:7acb\:7684\:4e0a\:4e0b\:6587\:73af\:5883",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:workflow/AutomaticallyUseSeparateContextsForDifferentNotebooks"
+              ],
+              " \[FilledVerySmallSquare] ",
+              ButtonBox[
+               "\:5904\:7406\:7b26\:53f7\:540d\:79f0\:906e\:76d6\:7684\:95ee\:9898",
+               BaseStyle -> "Link",
+               ButtonData -> "paclet:workflow/HandleShadowingOfSymbolNames"
+              ]
+             }
+            ],
+            "Text",
+            Editable -> False,
+            Deletable -> False
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ],
+  Cell[
+   TextData[
+    {
+     "\:8fd9\:4e2a\:7b14\:8bb0\:672c\:662f",
+     ButtonBox[
+      "@miroox",
+      BaseStyle -> "Hyperlink",
+      ButtonData -> {URL["https://miroox.github.io/"], None},
+      ButtonNote -> "https://miroox.github.io/"
+     ],
+     "\:7684\:535a\:5ba2\:6587\:7ae0\[OpenCurlyDoubleQuote]",
+     ButtonBox[
+      "Wolfram\:8bed\:8a00\:4e2d\:7684\:4f5c\:7528\:57df\:7ed3\:6784",
+      BaseStyle -> "Hyperlink",
+      ButtonData -> {
+       URL["https://miroox.github.io/2018/08/ScopeInWolframLang/"],
+       None
+      },
+      ButtonNote -> "https://miroox.github.io/2018/08/ScopeInWolframLang/"
+     ],
+     "\"\:7684\:4e00\:90e8\:5206\:3002\:91c7\:7528 ",
+     ButtonBox[
+      "Creative Commons BY-NC-ND 4.0 International License",
+      BaseStyle -> "Hyperlink",
+      ButtonData -> {
+       URL[
+        "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"
+       ],
+       None
+      },
+      ButtonNote -> "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"
+     ],
+     " \:534f\:8bae\:6388\:6743\:3002"
+    }
+   ],
+   "Author",
+   CellGroupingRules -> "SectionGrouping"
+  ]
+ },
+ ShowCellBracket -> Automatic,
+ CellContext -> CellGroup,
+ StyleDefinitions -> Notebook[
+  {
+   Cell[
+    StyleData[
+     StyleDefinitions -> FrontEnd`FileName[
+      {"Report"},
+      "AutomatedReport.nb",
+      CharacterEncoding -> "UTF-8"
+     ]
+    ]
+   ]
+  },
+  Visible -> False,
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"
+ ]
+]

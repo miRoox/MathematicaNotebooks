@@ -1,0 +1,9 @@
+Notebook[{},
+NotebookDynamicExpression:>Dynamic[
+  Refresh[
+   MathLink`CallFrontEnd[FrontEnd`UndocumentedCrashFrontEndPacket[]], None]],
+WindowSize->{600, 400},
+WindowMargins->Automatic,
+DynamicUpdating->True,
+TrackCellChangeTimes->False,
+StyleDefinitions->"Default.nb"]

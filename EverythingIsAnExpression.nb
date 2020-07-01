@@ -1,0 +1,682 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell["Everything is an expression.", "Title"],
+     Cell["\:7b97\:672f\:8868\:8fbe\:5f0f", "Item"],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              RowBox[{"2", "a"}],
+              "+",
+              SqrtBox["b"],
+              "+",
+              SuperscriptBox["c", RowBox[{"d", "[", "e", "]"}]]
+             }
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[1]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "Plus",
+              "[",
+              RowBox[
+               {
+                RowBox[{"Times", "[", RowBox[{"2", ",", "a"}], "]"}],
+                ",",
+                RowBox[
+                 {
+                  "Power",
+                  "[",
+                  RowBox[
+                   {
+                    "b",
+                    ",",
+                    RowBox[{"Rational", "[", RowBox[{"1", ",", "2"}], "]"}]
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Power",
+                  "[",
+                  RowBox[{"c", ",", RowBox[{"d", "[", "e", "]"}]}],
+                  "]"
+                 }
+                ]
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[1]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell["\:5217\:8868", "Item"],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              "{",
+              RowBox[
+               {
+                RowBox[{"1", "+", RowBox[{"2", "I"}]}],
+                ",",
+                RowBox[{RowBox[{"a", "*", "b"}], "+", "c"}],
+                ",",
+                RowBox[{"{", RowBox[{"2", ",", "a"}], "}"}],
+                ",",
+                "\"Str\""
+               }
+              ],
+              "}"
+             }
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[2]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "List",
+              "[",
+              RowBox[
+               {
+                RowBox[{"Complex", "[", RowBox[{"1", ",", "2"}], "]"}],
+                ",",
+                RowBox[
+                 {
+                  "Plus",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[{"Times", "[", RowBox[{"a", ",", "b"}], "]"}],
+                    ",",
+                    "c"
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[{"List", "[", RowBox[{"2", ",", "a"}], "]"}],
+                ",",
+                "\"Str\""
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[2]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell["\:56fe\:5f62", "Item"],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            GraphicsBox[
+             {
+              CircleBox[{0, 0}],
+              InsetBox[
+               RowBox[
+                {
+                 RowBox[
+                  {SuperscriptBox["x", "2"], "+", SuperscriptBox["y", "2"]}
+                 ],
+                 "\[LongEqual]",
+                 "1"
+                }
+               ],
+               {0, 0}
+              ]
+             }
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[3]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "Graphics",
+              "[",
+              RowBox[
+               {
+                "List",
+                "[",
+                RowBox[
+                 {
+                  RowBox[
+                   {
+                    "Circle",
+                    "[",
+                    RowBox[{"List", "[", RowBox[{"0", ",", "0"}], "]"}],
+                    "]"
+                   }
+                  ],
+                  ",",
+                  RowBox[
+                   {
+                    "Inset",
+                    "[",
+                    RowBox[
+                     {
+                      RowBox[
+                       {
+                        "Equal",
+                        "[",
+                        RowBox[
+                         {
+                          RowBox[
+                           {
+                            "Plus",
+                            "[",
+                            RowBox[
+                             {
+                              RowBox[{"Power", "[", RowBox[{"x", ",", "2"}], "]"}],
+                              ",",
+                              RowBox[{"Power", "[", RowBox[{"y", ",", "2"}], "]"}]
+                             }
+                            ],
+                            "]"
+                           }
+                          ],
+                          ",",
+                          "1"
+                         }
+                        ],
+                        "]"
+                       }
+                      ],
+                      ",",
+                      RowBox[{"List", "[", RowBox[{"0", ",", "0"}], "]"}]
+                     }
+                    ],
+                    "]"
+                   }
+                  ]
+                 }
+                ],
+                "]"
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[3]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell[
+      "\:975e\:7b26\:53f7\:5934\:90e8\:7684\:8868\:8fbe\:5f0f",
+      "Item"
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              RowBox[
+               {
+                RowBox[{RowBox[{"(", RowBox[{"1", "+", "#"}], ")"}], "&"}],
+                "[",
+                "a",
+                "]"
+               }
+              ],
+              "//",
+              "Hold"
+             }
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[4]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "Hold",
+              "[",
+              RowBox[
+               {
+                RowBox[
+                 {
+                  "Function",
+                  "[",
+                  RowBox[
+                   {
+                    "Plus",
+                    "[",
+                    RowBox[{"1", ",", RowBox[{"Slot", "[", "1", "]"}]}],
+                    "]"
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                "[",
+                "a",
+                "]"
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[4]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell["\:6309\:94ae\:63a7\:4ef6", "Item"],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            ButtonBox[
+             "\"Push\"",
+             Appearance -> Automatic,
+             ButtonFunction :> Print["Push!"],
+             Evaluator -> Automatic,
+             Method -> "Preemptive"
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[5]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "Button",
+              "[",
+              RowBox[
+               {
+                "\"Push\"",
+                ",",
+                RowBox[{"Print", "[", "\"Push!\"", "]"}],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[{"Appearance", ",", "Automatic"}],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {"Rule", "[", RowBox[{"Evaluator", ",", "Automatic"}], "]"}
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[{"Method", ",", "\"Preemptive\""}],
+                  "]"
+                 }
+                ]
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[5]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ],
+     Cell["\:7b14\:8bb0\:672c", "Item"],
+     Cell[
+      CellGroupData[
+       {
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              RowBox[
+               {
+                "CreateDocument",
+                "[",
+                RowBox[
+                 {
+                  "{",
+                  RowBox[
+                   {
+                    RowBox[{"x", "+", "y"}],
+                    ",",
+                    RowBox[
+                     {RowBox[{"1", "/", "x"}], "+", RowBox[{"1", "/", "y"}]}
+                    ]
+                   }
+                  ],
+                  "}"
+                 }
+                ],
+                "]"
+               }
+              ],
+              "//",
+              "NotebookGet"
+             }
+            ],
+            "//",
+            "FullForm"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[6]:="
+        ],
+        Cell[
+         BoxData[
+          TagBox[
+           StyleBox[
+            RowBox[
+             {
+              "Notebook",
+              "[",
+              RowBox[
+               {
+                RowBox[
+                 {
+                  "List",
+                  "[",
+                  RowBox[
+                   {
+                    RowBox[
+                     {
+                      "Cell",
+                      "[",
+                      RowBox[
+                       {
+                        "BoxData",
+                        "[",
+                        RowBox[
+                         {
+                          "RowBox",
+                          "[",
+                          RowBox[
+                           {
+                            "List",
+                            "[",
+                            RowBox[{"\"x\"", ",", "\"+\"", ",", "\"y\""}],
+                            "]"
+                           }
+                          ],
+                          "]"
+                         }
+                        ],
+                        "]"
+                       }
+                      ],
+                      "]"
+                     }
+                    ],
+                    ",",
+                    RowBox[
+                     {
+                      "Cell",
+                      "[",
+                      RowBox[
+                       {
+                        "BoxData",
+                        "[",
+                        RowBox[
+                         {
+                          "RowBox",
+                          "[",
+                          RowBox[
+                           {
+                            "List",
+                            "[",
+                            RowBox[
+                             {
+                              RowBox[
+                               {"FractionBox", "[", RowBox[{"\"1\"", ",", "\"x\""}], "]"}
+                              ],
+                              ",",
+                              "\"+\"",
+                              ",",
+                              RowBox[
+                               {"FractionBox", "[", RowBox[{"\"1\"", ",", "\"y\""}], "]"}
+                              ]
+                             }
+                            ],
+                            "]"
+                           }
+                          ],
+                          "]"
+                         }
+                        ],
+                        "]"
+                       }
+                      ],
+                      "]"
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[
+                   {
+                    "WindowSize",
+                    ",",
+                    RowBox[
+                     {"List", "[", RowBox[{"582.6`", ",", "493.2`"}], "]"}
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[
+                   {
+                    "WindowMargins",
+                    ",",
+                    RowBox[
+                     {
+                      "List",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[
+                         {"List", "[", RowBox[{"279", ",", "Automatic"}], "]"}
+                        ],
+                        ",",
+                        RowBox[
+                         {
+                          "List",
+                          "[",
+                          RowBox[{"Automatic", ",", "40.199999999999996`"}],
+                          "]"
+                         }
+                        ]
+                       }
+                      ],
+                      "]"
+                     }
+                    ]
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[
+                   {
+                    "FrontEndVersion",
+                    ",",
+                    "\"12.1 for Microsoft Windows (64-bit) (2020\\:5e744\\:670815\\:65e5)\""
+                   }
+                  ],
+                  "]"
+                 }
+                ],
+                ",",
+                RowBox[
+                 {
+                  "Rule",
+                  "[",
+                  RowBox[{"StyleDefinitions", ",", "\"Default.nb\""}],
+                  "]"
+                 }
+                ]
+               }
+              ],
+              "]"
+             }
+            ],
+            ShowSpecialCharacters -> False,
+            ShowStringCharacters -> True,
+            NumberMarks -> True
+           ],
+           FullForm
+          ]
+         ],
+         "Output",
+         CellLabel -> "Out[6]//FullForm="
+        ]
+       },
+       Open
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ StyleDefinitions -> "Default.nb"
+]
