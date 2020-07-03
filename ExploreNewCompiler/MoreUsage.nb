@@ -1,0 +1,1684 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell["More", "Title"],
+     Cell[
+      CellGroupData[
+       {
+        Cell["String type", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "cf",
+               "=",
+               RowBox[
+                {
+                 "FunctionCompile",
+                 "[",
+                 RowBox[
+                  {
+                   "Function",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       "{",
+                       RowBox[
+                        {"Typed", "[", RowBox[{"s", ",", "\"String\""}], "]"}
+                       ],
+                       "}"
+                      }
+                     ],
+                     ",",
+                     RowBox[
+                      {
+                       "Native`SubString",
+                       "[",
+                       RowBox[{"s", ",", "2", ",", "4"}],
+                       "]"
+                      }
+                     ]
+                    }
+                   ],
+                   "]"
+                  }
+                 ],
+                 "]"
+                }
+               ]
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[117]:="
+           ],
+           Cell[
+            BoxData[
+             InterpretationBox[
+              RowBox[
+               {
+                TagBox["CompiledCodeFunction", "SummaryHead"],
+                "[",
+                DynamicModuleBox[
+                 {Typeset`open$$ = False, Typeset`embedState$$ = "Ready"},
+                 TemplateBox[
+                  {
+                   PaneSelectorBox[
+                    {
+                     False -> GridBox[
+                      {
+                       {
+                        GraphicsBox[
+                         InsetBox[
+                          FormBox[
+                           StyleBox[
+                            "\"Code\"",
+                            GrayLevel[0.7],
+                            Bold,
+                            8.,
+                            StripOnInput -> False
+                           ],
+                           TraditionalForm
+                          ],
+                          {0, 0}
+                         ],
+                         Background -> GrayLevel[0.93],
+                         Axes -> False,
+                         AspectRatio -> 1,
+                         ImageSize -> {
+                          Automatic,
+                          Dynamic[
+                           Times[
+                            3.5,
+                            Times[
+                             CurrentValue["FontCapHeight"],
+                             AbsoluteCurrentValue[Magnification]^(-1)
+                            ]
+                           ],
+                           ImageSizeCache -> {27., {0., 10.}}
+                          ]
+                         },
+                         Frame -> True,
+                         FrameTicks -> None,
+                         FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                        ],
+                        GridBox[
+                         {
+                          {
+                           RowBox[
+                            {
+                             TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                             "\[InvisibleSpace]",
+                             TagBox[
+                              RowBox[
+                               {RowBox[{"{", "\"String\"", "}"}], "\[Rule]", "\"String\""}
+                              ],
+                              "SummaryItem"
+                             ]
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                         BaseStyle -> {
+                          ShowStringCharacters -> False,
+                          NumberMarks -> False,
+                          PrintPrecision -> 3,
+                          ShowSyntaxStyles -> False
+                         }
+                        ]
+                       }
+                      },
+                      GridBoxAlignment -> {"Rows" -> {{Top}}},
+                      AutoDelete -> False,
+                      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                      BaselinePosition -> {1, 1}
+                     ],
+                     True -> GridBox[
+                      {
+                       {
+                        GraphicsBox[
+                         InsetBox[
+                          FormBox[
+                           StyleBox[
+                            "\"Code\"",
+                            GrayLevel[0.7],
+                            Bold,
+                            8.,
+                            StripOnInput -> False
+                           ],
+                           TraditionalForm
+                          ],
+                          {0, 0}
+                         ],
+                         Background -> GrayLevel[0.93],
+                         Axes -> False,
+                         AspectRatio -> 1,
+                         ImageSize -> {
+                          Automatic,
+                          Dynamic[
+                           Times[
+                            3.5,
+                            Times[
+                             CurrentValue["FontCapHeight"],
+                             AbsoluteCurrentValue[Magnification]^(-1)
+                            ]
+                           ],
+                           ImageSizeCache -> {27., {0., 10.}}
+                          ]
+                         },
+                         Frame -> True,
+                         FrameTicks -> None,
+                         FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                        ],
+                        GridBox[
+                         {
+                          {
+                           RowBox[
+                            {
+                             TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                             "\[InvisibleSpace]",
+                             TagBox[
+                              RowBox[
+                               {RowBox[{"{", "\"String\"", "}"}], "\[Rule]", "\"String\""}
+                              ],
+                              "SummaryItem"
+                             ]
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                         BaseStyle -> {
+                          ShowStringCharacters -> False,
+                          NumberMarks -> False,
+                          PrintPrecision -> 3,
+                          ShowSyntaxStyles -> False
+                         }
+                        ]
+                       }
+                      },
+                      GridBoxAlignment -> {"Rows" -> {{Top}}},
+                      AutoDelete -> False,
+                      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                      BaselinePosition -> {1, 1}
+                     ]
+                    },
+                    Dynamic[Typeset`open$$],
+                    ImageSize -> Automatic
+                   ]
+                  },
+                  "SummaryPanel"
+                 ],
+                 DynamicModuleValues :> { }
+                ],
+                "]"
+               }
+              ],
+              CompiledCodeFunction[
+               Association[
+                "Signature" -> TypeSpecifier[{"String"} -> "String"],
+                "Input" -> Function[
+                 {Typed[s, "String"]},
+                 Native`SubString[s, 2, 4]
+                ],
+                "ErrorFunction" -> Automatic,
+                "SystemID" -> "Windows-x86-64",
+                "VersionData" -> {12., 0, 0},
+                "orcInstance" -> 815106800,
+                "orcModuleId" -> 0,
+                "targetMachineId" -> 791435664
+               ],
+               902696936,
+               902696912,
+               902696944,
+               "{\"String\"} -> \"String\""
+              ],
+              Editable -> False,
+              SelectWithContents -> True,
+              Selectable -> False
+             ]
+            ],
+            "Output",
+            CellLabel -> "Out[117]="
+           ]
+          },
+          Open
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "{",
+               RowBox[
+                {
+                 RowBox[{"cf", "[", "\"\"", "]"}],
+                 ",",
+                 RowBox[{"cf", "[", "\"abcdef\"", "]"}],
+                 ",",
+                 RowBox[{"cf", "[", "\"ab\"", "]"}]
+                }
+               ],
+               "}"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[118]:="
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {"{", RowBox[{"\"\"", ",", "\"bcd\"", ",", "\"ab\""}], "}"}
+             ]
+            ],
+            "Output",
+            CellLabel -> "Out[118]="
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Closed
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Uncheck", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "FunctionCompileExportString",
+               "[",
+               RowBox[
+                {
+                 RowBox[
+                  {
+                   "Function",
+                   "[",
+                   RowBox[
+                    {
+                     RowBox[
+                      {
+                       "{",
+                       RowBox[
+                        {
+                         "Typed",
+                         "[",
+                         RowBox[{"arg1", ",", "\"MachineInteger\""}],
+                         "]"
+                        }
+                       ],
+                       "}"
+                      }
+                     ],
+                     ",",
+                     RowBox[
+                      {
+                       "Native`UncheckedBlock",
+                       "[",
+                       RowBox[{"arg1", "+", "1"}],
+                       "]"
+                      }
+                     ]
+                    }
+                   ],
+                   "]"
+                  }
+                 ],
+                 ",",
+                 "\"Assembler\""
+                }
+               ],
+               "]"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[112]:="
+           ],
+           Cell[
+            BoxData[
+             "\"\\t.text\\n\\t.def\\t Main;\\n\\t.scl\\t2;\\n\\t.type\\t32;\\n\\t.endef\\n\\t.globl\\tMain\\n\\t.p2align\\t4, 0x90\\nMain:\\n\\tleaq\\t1(%rcx), %rax\\n\\tretq\\n\\n\\n\\t.section\\t.drectve,\\\"yn\\\"\\n\\t.ascii\\t\\\" -export:Main\\\"\""
+            ],
+            "Output",
+            CellLabel -> "Out[112]="
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Closed
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["External Call", "Section"],
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              "lib",
+              "=",
+              RowBox[
+               {
+                "FunctionCompileExportLibrary",
+                "[",
+                RowBox[
+                 {
+                  "\"function.dll\"",
+                  ",",
+                  RowBox[
+                   {
+                    "Function",
+                    "[",
+                    RowBox[
+                     {
+                      RowBox[
+                       {
+                        "{",
+                        RowBox[
+                         {
+                          "Typed",
+                          "[",
+                          RowBox[{"arg", ",", "\"MachineInteger\""}],
+                          "]"
+                         }
+                        ],
+                        "}"
+                       }
+                      ],
+                      ",",
+                      RowBox[{"arg", "+", "1"}]
+                     }
+                    ],
+                    "]"
+                   }
+                  ],
+                  ",",
+                  RowBox[
+                   {
+                    "\"CompilerOptions\"",
+                    "\[Rule]",
+                    RowBox[
+                     {
+                      "\"CreateLibraryOptions\"",
+                      "\[Rule]",
+                      RowBox[
+                       {
+                        "{",
+                        RowBox[
+                         {
+                          "\"SystemLibraries\"",
+                          "\[Rule]",
+                          RowBox[{"{", "\"WolframRTL_Static_Minimal\"", "}"}]
+                         }
+                        ],
+                        "}"
+                       }
+                      ]
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ],
+                "]"
+               }
+              ]
+             }
+            ],
+            ";"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[113]:="
+        ],
+        Cell[
+         BoxData[
+          RowBox[{"Needs", "[", "\"CCompilerDriver`\"", "]"}]
+         ],
+         "Input",
+         CellLabel -> "In[114]:="
+        ],
+        Cell[
+         BoxData[
+          RowBox[
+           {
+            RowBox[
+             {
+              "test",
+              "=",
+              RowBox[
+               {
+                "CreateExecutable",
+                "[",
+                RowBox[
+                 {
+                  "\"\n   #include <stdio.h>\n   #include <inttypes.h>\n   int64_t Main(int64_t);\n   int main() {\n      printf(\\\"%\\\" PRId64, Main(10));\n   }\"",
+                  ",",
+                  "\"test\"",
+                  ",",
+                  RowBox[
+                   {
+                    "\"Libraries\"",
+                    "\[Rule]",
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[
+                       {
+                        "FileNameJoin",
+                        "[",
+                        RowBox[
+                         {
+                          "{",
+                          RowBox[
+                           {"$CCompilerDefaultDirectory", ",", "\"function.lib\""}
+                          ],
+                          "}"
+                         }
+                        ],
+                        "]"
+                       }
+                      ],
+                      "}"
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ],
+                "]"
+               }
+              ]
+             }
+            ],
+            ";"
+           }
+          ]
+         ],
+         "Input",
+         CellLabel -> "In[115]:="
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "RunProcess",
+               "[",
+               RowBox[{"test", ",", "\"StandardOutput\""}],
+               "]"
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[116]:="
+           ],
+           Cell[BoxData["\"11\""], "Output", CellLabel -> "Out[116]="]
+          },
+          Open
+         ]
+        ]
+       },
+       Closed
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Application", "Section"],
+        Cell[
+         CellGroupData[
+          {
+           Cell["Fast Inverse Square Root", "Subsection"],
+           Cell["create a bit_cast by Native`MemCpy", "Text"],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[
+                {"bitcast", "[", RowBox[{"From_", ",", "To_"}], "]"}
+               ],
+               ":=",
+               RowBox[
+                {
+                 "Function",
+                 "[",
+                 RowBox[
+                  {
+                   RowBox[
+                    {
+                     "{",
+                     RowBox[{"Typed", "[", RowBox[{"src", ",", "From"}], "]"}],
+                     "}"
+                    }
+                   ],
+                   ",",
+                   "\[IndentingNewLine]",
+                   RowBox[
+                    {
+                     "Module",
+                     "[",
+                     RowBox[
+                      {
+                       RowBox[
+                        {
+                         "{",
+                         RowBox[
+                          {
+                           RowBox[
+                            {
+                             "dst",
+                             "=",
+                             RowBox[{"Typed", "[", RowBox[{"0", ",", "To"}], "]"}]
+                            }
+                           ],
+                           ",",
+                           "dsth"
+                          }
+                         ],
+                         "}"
+                        }
+                       ],
+                       ",",
+                       "\[IndentingNewLine]",
+                       RowBox[
+                        {
+                         RowBox[
+                          {
+                           "dsth",
+                           "=",
+                           RowBox[{"Native`CreateVoidHandle", "@", "dst"}]
+                          }
+                         ],
+                         ";",
+                         "\[IndentingNewLine]",
+                         RowBox[
+                          {
+                           "Native`MemCpy",
+                           "[",
+                           RowBox[
+                            {
+                             "dsth",
+                             ",",
+                             RowBox[{"Native`CreateVoidHandle", "@", "src"}],
+                             ",",
+                             RowBox[{"Native`SizeOf", "[", "dst", "]"}]
+                            }
+                           ],
+                           "]"
+                          }
+                         ],
+                         ";",
+                         "\[IndentingNewLine]",
+                         RowBox[
+                          {
+                           "dst",
+                           "=",
+                           RowBox[
+                            {
+                             "Native`Load",
+                             "@",
+                             RowBox[
+                              {
+                               "Native`BitCast",
+                               "[",
+                               RowBox[{"dsth", ",", RowBox[{"\"Handle\"", "@", "To"}]}],
+                               "]"
+                              }
+                             ]
+                            }
+                           ]
+                          }
+                         ],
+                         ";",
+                         "\[IndentingNewLine]",
+                         "dst"
+                        }
+                       ]
+                      }
+                     ],
+                     "\[IndentingNewLine]",
+                     "]"
+                    }
+                   ]
+                  }
+                 ],
+                 "\[IndentingNewLine]",
+                 "]"
+                }
+               ]
+              }
+             ]
+            ],
+            "Input",
+            CellLabel -> "In[68]:="
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "rsqrt",
+                  "=",
+                  RowBox[
+                   {
+                    RowBox[{"ResourceFunction", "[", "\"Inline\"", "]"}],
+                    "[",
+                    RowBox[
+                     {
+                      "bitcast",
+                      ",",
+                      "\[IndentingNewLine]",
+                      RowBox[
+                       {
+                        "FunctionCompile",
+                        "@",
+                        RowBox[
+                         {
+                          "Function",
+                          "[",
+                          RowBox[
+                           {
+                            RowBox[
+                             {
+                              "{",
+                              RowBox[
+                               {"Typed", "[", RowBox[{"x", ",", "\"Real32\""}], "]"}
+                              ],
+                              "}"
+                             }
+                            ],
+                            ",",
+                            "\[IndentingNewLine]",
+                            RowBox[
+                             {
+                              "Module",
+                              "[",
+                              RowBox[
+                               {
+                                RowBox[
+                                 {
+                                  "{",
+                                  RowBox[
+                                   {
+                                    "i",
+                                    ",",
+                                    RowBox[
+                                     {
+                                      "x2",
+                                      "=",
+                                      RowBox[
+                                       {
+                                        "x",
+                                        "*",
+                                        RowBox[
+                                         {"Typed", "[", RowBox[{"0.5", ",", "\"Real32\""}], "]"}
+                                        ]
+                                       }
+                                      ]
+                                     }
+                                    ],
+                                    ",",
+                                    "y"
+                                   }
+                                  ],
+                                  "}"
+                                 }
+                                ],
+                                ",",
+                                "\[IndentingNewLine]",
+                                RowBox[
+                                 {
+                                  RowBox[
+                                   {
+                                    "i",
+                                    "=",
+                                    RowBox[
+                                     {
+                                      RowBox[
+                                       {
+                                        "bitcast",
+                                        "[",
+                                        RowBox[{"\"Real32\"", ",", "\"Integer32\""}],
+                                        "]"
+                                       }
+                                      ],
+                                      "[",
+                                      "x",
+                                      "]"
+                                     }
+                                    ]
+                                   }
+                                  ],
+                                  ";",
+                                  "\[IndentingNewLine]",
+                                  RowBox[
+                                   {
+                                    "i",
+                                    "=",
+                                    RowBox[
+                                     {
+                                      RowBox[
+                                       {
+                                        "Typed",
+                                        "[",
+                                        RowBox[{"16^^5f3759df", ",", "\"Integer32\""}],
+                                        "]"
+                                       }
+                                      ],
+                                      "-",
+                                      RowBox[
+                                       {
+                                        "BitShiftRight",
+                                        "[",
+                                        RowBox[
+                                         {
+                                          "i",
+                                          ",",
+                                          RowBox[
+                                           {"Typed", "[", RowBox[{"1", ",", "\"Integer32\""}], "]"}
+                                          ]
+                                         }
+                                        ],
+                                        "]"
+                                       }
+                                      ]
+                                     }
+                                    ]
+                                   }
+                                  ],
+                                  ";",
+                                  "\[IndentingNewLine]",
+                                  RowBox[
+                                   {
+                                    "y",
+                                    "=",
+                                    RowBox[
+                                     {
+                                      RowBox[
+                                       {
+                                        "bitcast",
+                                        "[",
+                                        RowBox[{"\"Integer32\"", ",", "\"Real32\""}],
+                                        "]"
+                                       }
+                                      ],
+                                      "[",
+                                      "i",
+                                      "]"
+                                     }
+                                    ]
+                                   }
+                                  ],
+                                  ";",
+                                  "\[IndentingNewLine]",
+                                  RowBox[
+                                   {
+                                    "y",
+                                    "=",
+                                    RowBox[
+                                     {
+                                      "y",
+                                      "*",
+                                      RowBox[
+                                       {
+                                        "(",
+                                        RowBox[
+                                         {
+                                          RowBox[
+                                           {"Typed", "[", RowBox[{"1.5", ",", "\"Real32\""}], "]"}
+                                          ],
+                                          "-",
+                                          RowBox[{"x2", "*", "y", "*", "y"}]
+                                         }
+                                        ],
+                                        ")"
+                                       }
+                                      ]
+                                     }
+                                    ]
+                                   }
+                                  ],
+                                  ";",
+                                  "\[IndentingNewLine]",
+                                  RowBox[
+                                   {
+                                    "y",
+                                    "=",
+                                    RowBox[
+                                     {
+                                      "y",
+                                      "*",
+                                      RowBox[
+                                       {
+                                        "(",
+                                        RowBox[
+                                         {
+                                          RowBox[
+                                           {"Typed", "[", RowBox[{"1.5", ",", "\"Real32\""}], "]"}
+                                          ],
+                                          "-",
+                                          RowBox[{"x2", "*", "y", "*", "y"}]
+                                         }
+                                        ],
+                                        ")"
+                                       }
+                                      ]
+                                     }
+                                    ]
+                                   }
+                                  ],
+                                  ";",
+                                  "\[IndentingNewLine]",
+                                  "y"
+                                 }
+                                ]
+                               }
+                              ],
+                              "\[IndentingNewLine]",
+                              "]"
+                             }
+                            ]
+                           }
+                          ],
+                          "\[IndentingNewLine]",
+                          "]"
+                         }
+                        ]
+                       }
+                      ]
+                     }
+                    ],
+                    "\[IndentingNewLine]",
+                    "]"
+                   }
+                  ]
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[84]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   TagBox["CompiledCodeFunction", "SummaryHead"],
+                   "[",
+                   DynamicModuleBox[
+                    {Typeset`open$$ = False, Typeset`embedState$$ = "Ready"},
+                    TemplateBox[
+                     {
+                      PaneSelectorBox[
+                       {
+                        False -> GridBox[
+                         {
+                          {
+                           GraphicsBox[
+                            InsetBox[
+                             FormBox[
+                              StyleBox[
+                               "\"Code\"",
+                               GrayLevel[0.7],
+                               Bold,
+                               8.,
+                               StripOnInput -> False
+                              ],
+                              TraditionalForm
+                             ],
+                             {0, 0}
+                            ],
+                            Background -> GrayLevel[0.93],
+                            Axes -> False,
+                            AspectRatio -> 1,
+                            ImageSize -> {
+                             Automatic,
+                             Dynamic[
+                              Times[
+                               3.5,
+                               Times[
+                                CurrentValue["FontCapHeight"],
+                                AbsoluteCurrentValue[Magnification]^(-1)
+                               ]
+                              ],
+                              ImageSizeCache -> {27., {0., 10.}}
+                             ]
+                            },
+                            Frame -> True,
+                            FrameTicks -> None,
+                            FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                           ],
+                           GridBox[
+                            {
+                             {
+                              RowBox[
+                               {
+                                TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                                "\[InvisibleSpace]",
+                                TagBox[
+                                 RowBox[
+                                  {RowBox[{"{", "\"Real32\"", "}"}], "\[Rule]", "\"Real32\""}
+                                 ],
+                                 "SummaryItem"
+                                ]
+                               }
+                              ]
+                             }
+                            },
+                            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                            AutoDelete -> False,
+                            GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                            GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                            BaseStyle -> {
+                             ShowStringCharacters -> False,
+                             NumberMarks -> False,
+                             PrintPrecision -> 3,
+                             ShowSyntaxStyles -> False
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Rows" -> {{Top}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         BaselinePosition -> {1, 1}
+                        ],
+                        True -> GridBox[
+                         {
+                          {
+                           GraphicsBox[
+                            InsetBox[
+                             FormBox[
+                              StyleBox[
+                               "\"Code\"",
+                               GrayLevel[0.7],
+                               Bold,
+                               8.,
+                               StripOnInput -> False
+                              ],
+                              TraditionalForm
+                             ],
+                             {0, 0}
+                            ],
+                            Background -> GrayLevel[0.93],
+                            Axes -> False,
+                            AspectRatio -> 1,
+                            ImageSize -> {
+                             Automatic,
+                             Dynamic[
+                              Times[
+                               3.5,
+                               Times[
+                                CurrentValue["FontCapHeight"],
+                                AbsoluteCurrentValue[Magnification]^(-1)
+                               ]
+                              ],
+                              ImageSizeCache -> {27., {0., 10.}}
+                             ]
+                            },
+                            Frame -> True,
+                            FrameTicks -> None,
+                            FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                           ],
+                           GridBox[
+                            {
+                             {
+                              RowBox[
+                               {
+                                TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                                "\[InvisibleSpace]",
+                                TagBox[
+                                 RowBox[
+                                  {RowBox[{"{", "\"Real32\"", "}"}], "\[Rule]", "\"Real32\""}
+                                 ],
+                                 "SummaryItem"
+                                ]
+                               }
+                              ]
+                             }
+                            },
+                            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                            AutoDelete -> False,
+                            GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                            GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                            BaseStyle -> {
+                             ShowStringCharacters -> False,
+                             NumberMarks -> False,
+                             PrintPrecision -> 3,
+                             ShowSyntaxStyles -> False
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Rows" -> {{Top}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         BaselinePosition -> {1, 1}
+                        ]
+                       },
+                       Dynamic[Typeset`open$$],
+                       ImageSize -> Automatic
+                      ]
+                     },
+                     "SummaryPanel"
+                    ],
+                    DynamicModuleValues :> { }
+                   ],
+                   "]"
+                  }
+                 ],
+                 CompiledCodeFunction[
+                  Association[
+                   "Signature" -> TypeSpecifier[{"Real32"} -> "Real32"],
+                   "Input" -> Function[
+                    {Typed[x, "Real32"]},
+                    Module[
+                     {
+                      i,
+                      x2 = x*Typed[0.5, "Real32"],
+                      y
+                     },
+                     i = Function[{Typed[src, "Real32"]}, Module[{dst$ = Typed[0, "Integer32"], dsth$}, dsth$ = Native`CreateVoidHandle[dst$]; Native`MemCpy[dsth$, Native`CreateVoidHandle[src], Native`SizeOf[dst$]]; dst$ = Native`Load[Native`BitCast[dsth$, "Handle"["Integer32"]]]; dst$]][
+                      x
+                     ];
+                     i = Plus[
+                      Typed[1597463007, "Integer32"],
+                      -BitShiftRight[i, Typed[1, "Integer32"]]
+                     ];
+                     y = Function[{Typed[src, "Integer32"]}, Module[{dst$ = Typed[0, "Real32"], dsth$}, dsth$ = Native`CreateVoidHandle[dst$]; Native`MemCpy[dsth$, Native`CreateVoidHandle[src], Native`SizeOf[dst$]]; dst$ = Native`Load[Native`BitCast[dsth$, "Handle"["Real32"]]]; dst$]][
+                      i
+                     ];
+                     y = (Times[
+                      y,
+                      Plus[
+                       Typed[1.5, "Real32"],
+                       -((x2*y)*y)
+                      ]
+                     ]);
+                     y = (Times[
+                      y,
+                      Plus[
+                       Typed[1.5, "Real32"],
+                       -((x2*y)*y)
+                      ]
+                     ]);
+                     y
+                    ]
+                   ],
+                   "ErrorFunction" -> Automatic,
+                   "SystemID" -> "Windows-x86-64",
+                   "VersionData" -> {12., 0, 0},
+                   "orcInstance" -> 653332896,
+                   "orcModuleId" -> 0,
+                   "targetMachineId" -> 57329328
+                  ],
+                  766054376,
+                  766054352,
+                  766054384,
+                  "{\"Real32\"} -> \"Real32\""
+                 ],
+                 Editable -> False,
+                 SelectWithContents -> True,
+                 Selectable -> False
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[84]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell["use Native`BitCast", "Text"],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "rsqrt",
+                  "=",
+                  RowBox[
+                   {
+                    "FunctionCompile",
+                    "@",
+                    RowBox[
+                     {
+                      "Function",
+                      "[",
+                      RowBox[
+                       {
+                        RowBox[
+                         {
+                          "{",
+                          RowBox[
+                           {"Typed", "[", RowBox[{"x", ",", "\"Real32\""}], "]"}
+                          ],
+                          "}"
+                         }
+                        ],
+                        ",",
+                        "\[IndentingNewLine]",
+                        RowBox[
+                         {
+                          "Module",
+                          "[",
+                          RowBox[
+                           {
+                            RowBox[
+                             {
+                              "{",
+                              RowBox[
+                               {
+                                "i",
+                                ",",
+                                RowBox[
+                                 {
+                                  "x2",
+                                  "=",
+                                  RowBox[
+                                   {
+                                    "x",
+                                    "*",
+                                    RowBox[
+                                     {"Typed", "[", RowBox[{"0.5", ",", "\"Real32\""}], "]"}
+                                    ]
+                                   }
+                                  ]
+                                 }
+                                ],
+                                ",",
+                                "y"
+                               }
+                              ],
+                              "}"
+                             }
+                            ],
+                            ",",
+                            "\[IndentingNewLine]",
+                            RowBox[
+                             {
+                              RowBox[
+                               {
+                                "i",
+                                "=",
+                                RowBox[
+                                 {
+                                  "Native`BitCast",
+                                  "[",
+                                  RowBox[{"x", ",", "\"Integer32\""}],
+                                  "]"
+                                 }
+                                ]
+                               }
+                              ],
+                              ";",
+                              "\[IndentingNewLine]",
+                              RowBox[
+                               {
+                                "i",
+                                "=",
+                                RowBox[
+                                 {
+                                  RowBox[
+                                   {
+                                    "Typed",
+                                    "[",
+                                    RowBox[{"16^^5f3759df", ",", "\"Integer32\""}],
+                                    "]"
+                                   }
+                                  ],
+                                  "-",
+                                  RowBox[
+                                   {
+                                    "BitShiftRight",
+                                    "[",
+                                    RowBox[
+                                     {
+                                      "i",
+                                      ",",
+                                      RowBox[
+                                       {"Typed", "[", RowBox[{"1", ",", "\"Integer32\""}], "]"}
+                                      ]
+                                     }
+                                    ],
+                                    "]"
+                                   }
+                                  ]
+                                 }
+                                ]
+                               }
+                              ],
+                              ";",
+                              "\[IndentingNewLine]",
+                              RowBox[
+                               {
+                                "y",
+                                "=",
+                                RowBox[
+                                 {
+                                  "Native`BitCast",
+                                  "[",
+                                  RowBox[{"i", ",", "\"Real32\""}],
+                                  "]"
+                                 }
+                                ]
+                               }
+                              ],
+                              ";",
+                              "\[IndentingNewLine]",
+                              RowBox[
+                               {
+                                "y",
+                                "=",
+                                RowBox[
+                                 {
+                                  "y",
+                                  "*",
+                                  RowBox[
+                                   {
+                                    "(",
+                                    RowBox[
+                                     {
+                                      RowBox[
+                                       {"Typed", "[", RowBox[{"1.5", ",", "\"Real32\""}], "]"}
+                                      ],
+                                      "-",
+                                      RowBox[{"x2", "*", "y", "*", "y"}]
+                                     }
+                                    ],
+                                    ")"
+                                   }
+                                  ]
+                                 }
+                                ]
+                               }
+                              ],
+                              ";",
+                              "\[IndentingNewLine]",
+                              RowBox[
+                               {
+                                "y",
+                                "=",
+                                RowBox[
+                                 {
+                                  "y",
+                                  "*",
+                                  RowBox[
+                                   {
+                                    "(",
+                                    RowBox[
+                                     {
+                                      RowBox[
+                                       {"Typed", "[", RowBox[{"1.5", ",", "\"Real32\""}], "]"}
+                                      ],
+                                      "-",
+                                      RowBox[{"x2", "*", "y", "*", "y"}]
+                                     }
+                                    ],
+                                    ")"
+                                   }
+                                  ]
+                                 }
+                                ]
+                               }
+                              ],
+                              ";",
+                              "\[IndentingNewLine]",
+                              "y"
+                             }
+                            ]
+                           }
+                          ],
+                          "\[IndentingNewLine]",
+                          "]"
+                         }
+                        ]
+                       }
+                      ],
+                      "\[IndentingNewLine]",
+                      "]"
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[92]:="
+              ],
+              Cell[
+               BoxData[
+                InterpretationBox[
+                 RowBox[
+                  {
+                   TagBox["CompiledCodeFunction", "SummaryHead"],
+                   "[",
+                   DynamicModuleBox[
+                    {Typeset`open$$ = False, Typeset`embedState$$ = "Ready"},
+                    TemplateBox[
+                     {
+                      PaneSelectorBox[
+                       {
+                        False -> GridBox[
+                         {
+                          {
+                           GraphicsBox[
+                            InsetBox[
+                             FormBox[
+                              StyleBox[
+                               "\"Code\"",
+                               GrayLevel[0.7],
+                               Bold,
+                               8.,
+                               StripOnInput -> False
+                              ],
+                              TraditionalForm
+                             ],
+                             {0, 0}
+                            ],
+                            Background -> GrayLevel[0.93],
+                            Axes -> False,
+                            AspectRatio -> 1,
+                            ImageSize -> {
+                             Automatic,
+                             Dynamic[
+                              Times[
+                               3.5,
+                               Times[
+                                CurrentValue["FontCapHeight"],
+                                AbsoluteCurrentValue[Magnification]^(-1)
+                               ]
+                              ],
+                              ImageSizeCache -> {27., {0., 10.}}
+                             ]
+                            },
+                            Frame -> True,
+                            FrameTicks -> None,
+                            FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                           ],
+                           GridBox[
+                            {
+                             {
+                              RowBox[
+                               {
+                                TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                                "\[InvisibleSpace]",
+                                TagBox[
+                                 RowBox[
+                                  {RowBox[{"{", "\"Real32\"", "}"}], "\[Rule]", "\"Real32\""}
+                                 ],
+                                 "SummaryItem"
+                                ]
+                               }
+                              ]
+                             }
+                            },
+                            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                            AutoDelete -> False,
+                            GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                            GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                            BaseStyle -> {
+                             ShowStringCharacters -> False,
+                             NumberMarks -> False,
+                             PrintPrecision -> 3,
+                             ShowSyntaxStyles -> False
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Rows" -> {{Top}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         BaselinePosition -> {1, 1}
+                        ],
+                        True -> GridBox[
+                         {
+                          {
+                           GraphicsBox[
+                            InsetBox[
+                             FormBox[
+                              StyleBox[
+                               "\"Code\"",
+                               GrayLevel[0.7],
+                               Bold,
+                               8.,
+                               StripOnInput -> False
+                              ],
+                              TraditionalForm
+                             ],
+                             {0, 0}
+                            ],
+                            Background -> GrayLevel[0.93],
+                            Axes -> False,
+                            AspectRatio -> 1,
+                            ImageSize -> {
+                             Automatic,
+                             Dynamic[
+                              Times[
+                               3.5,
+                               Times[
+                                CurrentValue["FontCapHeight"],
+                                AbsoluteCurrentValue[Magnification]^(-1)
+                               ]
+                              ],
+                              ImageSizeCache -> {27., {0., 10.}}
+                             ]
+                            },
+                            Frame -> True,
+                            FrameTicks -> None,
+                            FrameStyle -> Directive[Thickness[Tiny], GrayLevel[0.55]]
+                           ],
+                           GridBox[
+                            {
+                             {
+                              RowBox[
+                               {
+                                TagBox["\"Signature: \"", "SummaryItemAnnotation"],
+                                "\[InvisibleSpace]",
+                                TagBox[
+                                 RowBox[
+                                  {RowBox[{"{", "\"Real32\"", "}"}], "\[Rule]", "\"Real32\""}
+                                 ],
+                                 "SummaryItem"
+                                ]
+                               }
+                              ]
+                             }
+                            },
+                            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+                            AutoDelete -> False,
+                            GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                            GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+                            BaseStyle -> {
+                             ShowStringCharacters -> False,
+                             NumberMarks -> False,
+                             PrintPrecision -> 3,
+                             ShowSyntaxStyles -> False
+                            }
+                           ]
+                          }
+                         },
+                         GridBoxAlignment -> {"Rows" -> {{Top}}},
+                         AutoDelete -> False,
+                         GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                         BaselinePosition -> {1, 1}
+                        ]
+                       },
+                       Dynamic[Typeset`open$$],
+                       ImageSize -> Automatic
+                      ]
+                     },
+                     "SummaryPanel"
+                    ],
+                    DynamicModuleValues :> { }
+                   ],
+                   "]"
+                  }
+                 ],
+                 CompiledCodeFunction[
+                  Association[
+                   "Signature" -> TypeSpecifier[{"Real32"} -> "Real32"],
+                   "Input" -> Function[
+                    {Typed[x, "Real32"]},
+                    Module[
+                     {
+                      i,
+                      x2 = x*Typed[0.5, "Real32"],
+                      y
+                     },
+                     i = Native`BitCast[x, "Integer32"];
+                     i = Plus[
+                      Typed[1597463007, "Integer32"],
+                      -BitShiftRight[i, Typed[1, "Integer32"]]
+                     ];
+                     y = Native`BitCast[i, "Real32"];
+                     y = (Times[
+                      y,
+                      Plus[
+                       Typed[1.5, "Real32"],
+                       -((x2*y)*y)
+                      ]
+                     ]);
+                     y = (Times[
+                      y,
+                      Plus[
+                       Typed[1.5, "Real32"],
+                       -((x2*y)*y)
+                      ]
+                     ]);
+                     y
+                    ]
+                   ],
+                   "ErrorFunction" -> Automatic,
+                   "SystemID" -> "Windows-x86-64",
+                   "VersionData" -> {12., 0, 0},
+                   "orcInstance" -> 748613376,
+                   "orcModuleId" -> 0,
+                   "targetMachineId" -> 57325360
+                  ],
+                  768020456,
+                  768020432,
+                  768020464,
+                  "{\"Real32\"} -> \"Real32\""
+                 ],
+                 Editable -> False,
+                 SelectWithContents -> True,
+                 Selectable -> False
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[92]="
+              ]
+             },
+             Open
+            ]
+           ],
+           Cell[
+            CellGroupData[
+             {
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "1",
+                  "/",
+                  RowBox[
+                   {
+                    "rsqrt",
+                    "/@",
+                    RowBox[
+                     {
+                      "{",
+                      RowBox[{"1.0", ",", "2.0", ",", "4.0", ",", "9.0"}],
+                      "}"
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               ],
+               "Input",
+               CellLabel -> "In[85]:="
+              ],
+              Cell[
+               BoxData[
+                RowBox[
+                 {
+                  "{",
+                  RowBox[
+                   {
+                    "1.000004351158001`",
+                    ",",
+                    "1.4142138249949572`",
+                    ",",
+                    "2.000008702316002`",
+                    ",",
+                    "3.000006079686088`"
+                   }
+                  ],
+                  "}"
+                 }
+                ]
+               ],
+               "Output",
+               CellLabel -> "Out[85]="
+              ]
+             },
+             Open
+            ]
+           ]
+          },
+          Open
+         ]
+        ]
+       },
+       Closed
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ StyleDefinitions -> "Default.nb"
+]
