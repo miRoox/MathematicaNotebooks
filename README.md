@@ -17,6 +17,7 @@
 * `FFT`: Implement and comparison of FFT & DFT.
 * `Inconsistencies`: Inconsistencies between front-end and kernel.
 * `LearnDynamicAndManipulate`
+* `PhysicalOpticsWork-Slide`
 * `RootLocusPlot`
 * `ScopeInWolframLangauge`: see [Wolfram语言中的作用域结构](https://miroox.github.io/blog/2018/08/ScopeInWolframLang/).
 * `WolframRats2020`: Some attempts for [WolframRats](https://mp.weixin.qq.com/s/tyKXf3-wvLbDLKnV9PxGCQ).
